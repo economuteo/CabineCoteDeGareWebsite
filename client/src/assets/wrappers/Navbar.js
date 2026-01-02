@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+    width: 100%;
+
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -8,6 +10,29 @@ const Wrapper = styled.div`
     color: var(--primary-50);
     font-family: Plus Jakarta Sans, sans-serif;
     font-weight: 500;
+
+    &.scrolled {
+        position: fixed;
+        top: 0;
+        background-color: #fff;
+
+        .header {
+            padding-top: 16px !important;
+            padding-bottom: 8px !important;
+        }
+
+        .nav-logo {
+            img {
+                width: 90px;
+            }
+
+            @media only screen and (max-width: 1100px) {
+                img {
+                    width: 75px !important;
+                }
+            }
+        }
+    }
 
     a {
         position: relative;
@@ -44,6 +69,12 @@ const Wrapper = styled.div`
             margin-left: 88px;
             margin-right: 88px;
 
+            @media only screen and (max-width: 1490px) {
+                img {
+                    width: 95px !important;
+                }
+            }
+
             img {
                 width: auto;
                 position: absolute;
@@ -59,7 +90,8 @@ const Wrapper = styled.div`
     }
 
     .header {
-        padding: 32px 0px;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 
     .header-contact {
@@ -85,10 +117,12 @@ const Wrapper = styled.div`
         }
 
         #phoneImg {
+            filter: brightness(0);
             margin-right: 4px;
         }
 
         #emailImg {
+            filter: brightness(0);
             margin-right: 8px;
         }
 
@@ -119,11 +153,6 @@ const Wrapper = styled.div`
         a {
             padding-right: 0px;
         }
-    }
-
-    &.scrolled {
-        margin-top: 0px;
-        background-color: black;
     }
 
     @media only screen and (min-width: 768px) {

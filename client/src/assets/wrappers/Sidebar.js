@@ -9,6 +9,7 @@ const Wrapper = styled.div`
     height: 100vh;
     padding: 15px;
     background-color: white;
+    z-index: 1001;
     font-size: var(--font-size-sm);
 
     .nav-item {
@@ -41,6 +42,7 @@ const Wrapper = styled.div`
     #closeButton {
         width: 16px;
         height: 16px;
+        cursor: pointer;
     }
 
     .appointment-button {

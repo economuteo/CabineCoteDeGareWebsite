@@ -22,9 +22,18 @@ const HamburgerMenu = () => {
     };
 
     return (
-        <Wrapper onClick={toggleSidebar}>
+        <Wrapper>
             <span className={`hamburger ${sidebarAnimation ? "animate" : ""} `}>
-                <img className="hamburger-menu" src={hamburgerMenu} alt="" />
+                <img
+                    className="hamburger-menu"
+                    src={hamburgerMenu}
+                    alt=""
+                    onClick={toggleSidebar}
+                />
+
+                {/* overlay to darken the page; clicking it closes the sidebar */}
+                {sidebar ? <div className="menu-overlay" onClick={toggleSidebar} /> : null}
+
                 {sidebar ? (
                     <Sidebar
                         sidebar={sidebar}

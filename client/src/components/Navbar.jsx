@@ -11,7 +11,8 @@ const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const handleScroll = () => {
         const offset = window.scrollY;
-        if (offset > 50) {
+        // trigger on the smallest scroll — treat any non-zero vertical offset as scrolled
+        if (offset > 0) {
             setScrolled(true);
         } else {
             setScrolled(false);
@@ -19,42 +20,74 @@ const Navbar = () => {
     };
 
     useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
+        // run once to set initial state (in case user loaded the page scrolled)
+        // schedule via requestAnimationFrame to avoid synchronous setState inside effect
+        // which can cause cascading renders.
+        if (typeof window !== "undefined" && typeof window.requestAnimationFrame === "function") {
+            window.requestAnimationFrame(handleScroll);
+        } else {
+            // fallback
+            setTimeout(handleScroll, 0);
+        }
+
+        // listen to scroll and direct user interaction events so the UI updates
+        // immediately when the user starts scrolling (wheel/touchmove fire earlier
+        // in some browsers/devices than the final scroll event). Use passive for
+        // better scrolling performance.
+        const opts = { passive: true };
+        window.addEventListener("scroll", handleScroll, opts);
+        window.addEventListener("wheel", handleScroll, opts);
+        window.addEventListener("touchmove", handleScroll, opts);
+
         return () => {
-            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("scroll", handleScroll, opts);
+            window.removeEventListener("wheel", handleScroll, opts);
+            window.removeEventListener("touchmove", handleScroll, opts);
         };
     }, []);
 
     return (
-        <Wrapper className={`container ${scrolled ? "scrolled" : ""}`}>
-            <div className="big-navbar header">
+        <Wrapper className={`${scrolled ? "scrolled" : ""}`}>
+            <div className="container big-navbar header">
                 <div className="header-contact">
                     <span className="phoneNumber">
                         <img id="phoneImg" alt="Phone" src={phoneIcon} width="22" />
-                        <a href="tel:0212189218">021 218 92 18</a>
+                        <a href="tel:0212189218">
+                            <b>021 218 92 18</b>
+                        </a>
                         <a id="secondaryNumber" href="tel:0783006383">
-                            078 300 63 83
+                            <b>078 300 63 83</b>
                         </a>
                     </span>
                     <span className="email">
                         <a href="mailto:info@dentiste-cote-gare-bussigny.ch">
                             <img id="emailImg" alt="Email" src={mailIcon} width="22" />
-                            <span>info@dentiste-cote-gare-bussigny.ch</span>
+                            <span>
+                                <b>info@dentiste-cote-gare-bussigny.ch</b>
+                            </span>
                         </a>
                     </span>
                 </div>
                 <nav>
                     <span>
-                        <a href="">{t("navbar.home")}</a>
+                        <b>
+                            <a href="">{t("navbar.home")}</a>
+                        </b>
                     </span>
                     <span>
-                        <a href="">{t("navbar.pricing")}</a>
+                        <b>
+                            <a href="">{t("navbar.pricing")}</a>
+                        </b>
                     </span>
                     <span>
-                        <a href="">{t("navbar.specialties")}</a>
+                        <b>
+                            <a href="">{t("navbar.specialties")}</a>
+                        </b>
                     </span>
                     <span>
-                        <a href="">{t("navbar.blog")}</a>
+                        <b>
+                            <a href="">{t("navbar.blog")}</a>
+                        </b>
                     </span>
                     <span className="nav-logo">
                         <a href="/">
@@ -62,24 +95,32 @@ const Navbar = () => {
                         </a>
                     </span>
                     <span>
-                        <a href="">{t("navbar.contact")}</a>
+                        <b>
+                            <a href="">{t("navbar.contact")}</a>
+                        </b>
                     </span>
                     <span>
-                        <a href="">{t("navbar.careers")}</a>
+                        <b>
+                            <a href="">{t("navbar.careers")}</a>
+                        </b>
                     </span>
                     <span className="appointment-button">
-                        <a href="">{t("navbar.book_appointment")}</a>
+                        <b>
+                            <a href="">{t("navbar.book_appointment")}</a>
+                        </b>
                     </span>
                 </nav>
             </div>
-            <div className="small-navbar">
+            <div className="container small-navbar">
                 <img src={logo} id="logo" alt="Logo" />
                 <div className="right-side">
                     <span className="phoneNumber">
                         <img id="phoneImg" alt="Phone" src={phoneIcon} width="22" />
-                        <a href="tel:0212189218">021 218 92 18</a>
+                        <a href="tel:0212189218">
+                            <b>021 218 92 18</b>
+                        </a>
                         <a id="secondaryNumber" href="tel:0783006383">
-                            078 300 63 83
+                            <b>078 300 63 83</b>
                         </a>
                     </span>
                     <span className="email">

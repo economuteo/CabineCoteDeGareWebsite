@@ -3,7 +3,7 @@ import close from "../assets/images/close.svg";
 import Wrapper from "../assets/wrappers/Sidebar";
 import { useTranslation } from "react-i18next";
 
-const Sidebar = () => {
+const Sidebar = ({ toggleSidebar }) => {
     const { t } = useTranslation();
 
     return (
@@ -14,7 +14,7 @@ const Sidebar = () => {
                         <img src={logo} alt="Logo" />
                     </a>
                 </div>
-                <img id="closeButton" src={close} alt="" />
+                <img id="closeButton" src={close} alt="" onClick={toggleSidebar} />
             </div>
 
             <div className="background-close-menu"></div>
@@ -41,52 +41,6 @@ const Sidebar = () => {
                         {t("navbar.specialties")}
                     </a>
                 </p>
-
-                {/* <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <div className="dropdown-content">
-                            <a
-                                href="/specialites/traitements-prophylactiques"
-                                className="dropdown-item">
-                                Traitements prophylactiques
-                            </a>
-                            <a href="/specialites/urgences-dentaires" className="dropdown-item">
-                                Urgences dentaires{" "}
-                            </a>
-                            <a href="/specialites/facettes" className="dropdown-item">
-                                Facettes
-                            </a>
-                            <a
-                                href="/specialites/blanchiment-et-claircissement-des-dents"
-                                className="dropdown-item">
-                                Blanchiment et éclaircissement des dents{" "}
-                            </a>
-                            <a href="/specialites/implants-dentaires" className="dropdown-item">
-                                Implants dentaires
-                            </a>
-                            <a href="/specialites/hygiene-dentaire" className="dropdown-item">
-                                Hygiène dentaire
-                            </a>
-                            <a
-                                href="/specialites/un-relooking-du-sourire"
-                                className="dropdown-item">
-                                Un Relooking du Sourire{" "}
-                            </a>
-                            <a href="/specialites/endodontie" className="dropdown-item">
-                                Endodontie
-                            </a>
-                            <a
-                                href="/specialites/protheses-fixes-et-amovibles"
-                                className="dropdown-item">
-                                Prothèses fixes et amovibles{" "}
-                            </a>
-                            <a href="/specialites/sure-smile-aligners" className="dropdown-item">
-                                Sure Smile{" "}
-                            </a>
-                            <a href="/specialites/tarif-soins-dentaires" className="dropdown-item">
-                                Tarif soins dentaires{" "}
-                            </a>
-                        </div>
-                    </div> */}
                 <p className="nav-item">
                     <a href="/blog" className="nav-link">
                         {t("navbar.blog")}
