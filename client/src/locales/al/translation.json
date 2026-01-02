@@ -1,0 +1,24 @@
+{
+    "navbar": {
+        "home": "BALLINA",
+        "pricing": "ÇMIMET",
+        "specialties": "SPECIALIZIMET",
+        "blog": "BLOG",
+        "contact": "KONTAKTI",
+        "careers": "KARRIERA",
+        "book_appointment": "REZERVO TERMININ"
+    },
+    "home": {
+        "read_all": "LEXO MË SHUMË",
+        "home_1": "Nuk bëhet fjalë vetëm për dhëmbët, bëhet fjalë për ju",
+        "home_2": "MIRËSEVINI NË KLINIKËN DENTARE CÔTÉ GARE",
+        "home_3": "Buzëqeshja juaj në zemër të Bussigny-t",
+        "home_4": "Klinika Dentare Bussigny - Kujdes Dentar Profesional",
+        "home_5": "Shumë pacientë e pyesin Dr. Popescu Ramona-n pse zgjodhi të hapë klinikën e saj dentare në Bussigny. Përgjigja është e thjeshtë: është një komunitet mikpritës, në zhvillim dhe në përmasa njerëzore, ku marrëdhëniet e afërta dhe besimi marrin kuptimin e tyre të plotë.",
+        "home_6": "Që nga vizita e saj e parë në Bussigny, Dr. Popescu u magjeps nga atmosfera miqësore dhe dinamizmi i rajonit. E ndodhur vetëm pak hapa larg stacionit të trenit, klinika e saj është projektuar si një hapësirë e aksesueshme, moderne dhe qetësuese — ku çdo pacient mirëpritet me kujdes dhe vëmendje.",
+        "home_7": "Krijimi i buzëqeshjeve të qëndrueshme në një mjedis besimi",
+        "home_8": "Dr. Popescu beson fort në një qasje të personalizuar ndaj stomatologjisë. Ajo gjen kohë për të shpjeguar çdo hap të trajtimit, pavarësisht nga kompleksiteti i rastit, në mënyrë që pacientët të ndihen të sigurt dhe të mirëinformuar.",
+        "home_9": "Ajo mirëpret si fëmijët ashtu edhe të rriturit, me një vëmendje të veçantë për pacientët me ankth ose fëmijët e vegjël që përjetojnë kujdesin për herë të parë. Qëllimi i saj: të ndërthurë profesionalizmin, butësinë dhe precizitetin për t'ju ndihmuar të keni një buzëqeshje të shëndetshme dhe shkëlqyese në kushtet më të mira të mundshme.",
+        "home_10": "Na kontaktoni sot dhe zbuloni kujdesin e shkëlqyer dentar që meritoni!"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "navbar": {
+        "home": "HOME",
+        "pricing": "PRICING",
+        "specialties": "SPECIALTIES",
+        "blog": "BLOG",
+        "contact": "CONTACT",
+        "careers": "CAREERS",
+        "book_appointment": "BOOK APPOINTMENT"
+    },
+    "home": {
+        "read_all": "READ MORE",
+        "home_1": "It's not just about the teeth, it's about you",
+        "home_2": "WELCOME TO CÔTÉ GARE DENTAL PRACTICE",
+        "home_3": "Your smile in the heart of Bussigny",
+        "home_4": "Bussigny Dental Practice - Professional Dental Care",
+        "home_5": "Many patients ask Dr. Popescu Ramona why she chose to open her dental practice in Bussigny. The answer is simple: it's a welcoming, evolving community on a human scale, where close relationships and trust take on their full meaning.",
+        "home_6": "From her first visit to Bussigny, Dr. Popescu was charmed by the friendly atmosphere and dynamism of the region. Located just a stone's throw from the train station, her clinic is designed as an accessible, modern, and reassuring space—where each patient is welcomed with care and attention.",
+        "home_7": "Creating lasting smiles in a trusting environment",
+        "home_8": "Dr. Popescu strongly believes in a personalized approach to dentistry. She takes the time to explain each step of treatment, no matter how complex the case, so that patients feel confident and well-informed.",
+        "home_9": "She welcomes both children and adults, with special attention paid to anxious patients or toddlers experiencing care for the first time. Her goal: to combine skill, gentleness, and precision to help you achieve a healthy, dazzling smile in the best possible conditions.",
+        "home_10": "Contact us today and discover the excellent dental care you deserve!"
+    }
+}

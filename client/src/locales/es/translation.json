@@ -1,0 +1,24 @@
+{
+    "navbar": {
+        "home": "INICIO",
+        "pricing": "TARIFAS",
+        "specialties": "ESPECIALIDADES",
+        "blog": "BLOG",
+        "contact": "CONTACTO",
+        "careers": "EMPLEO",
+        "book_appointment": "PEDIR CITA"
+    },
+    "home": {
+        "read_all": "LEER MÁS",
+        "home_1": "No se trata solo de los dientes, se trata de ti",
+        "home_2": "BIENVENIDOS A LA CLÍNICA DENTAL CÔTÉ GARE",
+        "home_3": "Su sonrisa en el corazón de Bussigny",
+        "home_4": "Clínica Dental Bussigny - Cuidado Dental Profesional",
+        "home_5": "Muchos pacientes le preguntan a la Dra. Popescu Ramona por qué eligió abrir su clínica dental en Bussigny. La respuesta es sencilla: es una comunidad acogedora, en constante evolución y a escala humana, donde las relaciones cercanas y la confianza cobran todo su sentido.",
+        "home_6": "Desde su primera visita a Bussigny, la Dra. Popescu quedó encantada por el ambiente amable y el dinamismo de la región. Situada a un paso de la estación de tren, su clínica está diseñada como un espacio accesible, moderno y tranquilizador, donde cada paciente es recibido con esmero y atención.",
+        "home_7": "Crear sonrisas duraderas en un entorno de confianza",
+        "home_8": "La Dra. Popescu cree firmemente en un enfoque personalizado de la odontología. Se toma el tiempo necesario para explicar cada paso del tratamiento, sin importar la complejidad del caso, para que los pacientes se sientan seguros y bien informados.",
+        "home_9": "Atiende tanto a niños como a adultos, prestando especial atención a los pacientes ansiosos o a los niños pequeños que acuden a consulta por primera vez. Su objetivo: combinar destreza, delicadeza y precisión para ayudarle a conseguir una sonrisa sana y radiante en las mejores condiciones posibles.",
+        "home_10": "¡Contáctenos hoy mismo y descubra el excelente cuidado dental que se merece!"
+    }
+}

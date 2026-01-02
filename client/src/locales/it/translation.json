@@ -1,0 +1,24 @@
+{
+    "navbar": {
+        "home": "HOME",
+        "pricing": "PREZZI",
+        "specialties": "SPECIALIZZAZIONI",
+        "blog": "BLOG",
+        "contact": "CONTATTI",
+        "careers": "CARRIERA",
+        "book_appointment": "PRENOTA APPUNTAMENTO"
+    },
+    "home": {
+        "read_all": "LEGGI DI PIÙ",
+        "home_1": "Non si tratta solo di denti, si tratta di te",
+        "home_2": "BENVENUTI PRESSO LO STUDIO DENTISTICO CÔTÉ GARE",
+        "home_3": "Il tuo sorriso nel cuore di Bussigny",
+        "home_4": "Studio Dentistico Bussigny - Cure Odontoiatriche Professionali",
+        "home_5": "Molti pazienti chiedono alla Dott.ssa Popescu Ramona perché abbia scelto di aprire il suo studio dentistico a Bussigny. La risposta è semplice: è una comunità accogliente, in evoluzione e a misura d'uomo, dove i rapporti di vicinanza e la fiducia assumono il loro pieno significato.",
+        "home_6": "Sin dalla sua prima visita a Bussigny, la Dott.ssa Popescu è rimasta affascinata dall'atmosfera amichevole e dal dinamismo della regione. Situato a due passi dalla stazione ferroviaria, il suo studio è concepito come uno spazio accessibile, moderno e rassicurante, dove ogni paziente viene accolto con cura e attenzione.",
+        "home_7": "Creare sorrisos duraturi in un ambiente di fiducia",
+        "home_8": "La Dott.ssa Popescu crede fermamente in un approccio personalizzato all'odontoiatria. Si prende il tempo necessario per spiegare ogni fase del trattamento, indipendentemente dalla complessità del caso, affinché i pazienti si sentano sicuri e ben informati.",
+        "home_9": "Accoglie sia bambini che adulti, con una particolare attenzione ai pazienti ansiosi o ai più piccoli che affrontano le cure per la prima volta. Il suo obiettivo: unire competenza, delicatezza e precisione per aiutarvi a ottenere un sorriso sano e splendente nelle migliori condizioni possibili.",
+        "home_10": "Contattateci oggi stesso e scoprite l'eccellenza delle cure dentistiche che meritate!"
+    }
+}

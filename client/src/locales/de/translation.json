@@ -1,0 +1,24 @@
+{
+    "navbar": {
+        "home": "STARTSEITE",
+        "pricing": "PREISE",
+        "specialties": "FACHGEBIETE",
+        "blog": "BLOG",
+        "contact": "KONTAKT",
+        "careers": "KARRIERE",
+        "book_appointment": "TERMIN BUCHEN"
+    },
+    "home": {
+        "read_all": "MEHR LESEN",
+        "home_1": "Es geht nicht nur um die Zähne, es geht um Sie",
+        "home_2": "WILLKOMMEN IN DER ZAHNARZTPRAXIS CÔTÉ GARE",
+        "home_3": "Ihr Lächeln im Herzen von Bussigny",
+        "home_4": "Zahnarztpraxis Bussigny - Professionelle Zahnpflege",
+        "home_5": "Viele Patienten fragen Dr. Popescu Ramona, warum sie sich entschieden hat, ihre Zahnarztpraxis in Bussigny zu eröffnen. Die Antwort ist einfach: Es ist eine herzliche, sich entwickelnde Gemeinschaft auf menschlicher Ebene, in der Nähe und Vertrauen ihre volle Bedeutung finden.",
+        "home_6": "Schon bei ihrem ersten Besuch in Bussigny war Dr. Popescu von der freundlichen Atmosphäre und der Dynamik der Region begeistert. Nur einen Steinwurf vom Bahnhof entfernt, ist ihre Praxis als barrierefreier, moderner und beruhigender Raum konzipiert, in dem jeder Patient mit Sorgfalt und Aufmerksamkeit empfangen wird.",
+        "home_7": "Dauerhaftes Lächeln in einer vertrauensvollen Umgebung schaffen",
+        "home_8": "Dr. Popescu glaubt fest an einen personalisierten Ansatz in der Zahnmedizin. Sie nimmt sich die Zeit, jeden Behandlungsschritt zu erklären, unabhängig von der Komplexität des Falles, damit sich die Patienten sicher und gut informiert fühlen.",
+        "home_9": "Sie heißt sowohl Kinder als auch Erwachsene willkommen, wobei sie Patienten mit Zahnarztangst oder Kleinkindern, die zum ersten Mal behandelt werden, besondere Aufmerksamkeit schenkt. Ihr Ziel: Kompetenz, Sanftheit und Präzision zu vereinen, um Ihnen unter den bestmöglichen Bedingungen zu einem gesunden, strahlenden Lächeln zu verhelfen.",
+        "home_10": "Kontaktieren Sie uns noch heute und entdecken Sie die exzellente Zahnpflege, die Sie verdienen!"
+    }
+}

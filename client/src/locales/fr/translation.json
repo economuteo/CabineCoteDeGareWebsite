@@ -1,0 +1,24 @@
+{
+    "navbar": {
+        "home": "ACCUEIL",
+        "pricing": "TARIFS",
+        "specialties": "SPÉCIALITÉS",
+        "blog": "BLOG",
+        "contact": "CONTACT",
+        "careers": "CARRIÈRE",
+        "book_appointment": "PRENDRE RDV"
+    },
+    "home": {
+        "read_all": "LIRE LA SUITE",
+        "home_1": "Il ne s'agit pas seulement des dents, il s'agit de vous",
+        "home_2": "BIENVENUE AU CABINET DENTAIRE CÔTÉ GARE",
+        "home_3": "Votre sourire au cœur de Bussigny",
+        "home_4": "Cabinet Dentaire Bussigny - Soins Dentaires Professionnels",
+        "home_5": "De nombreux patients demandent au Dr Popescu Ramona pourquoi elle a choisi d'ouvrir son cabinet dentaire à Bussigny. La réponse est simple : c'est une communauté accueillante, en pleine évolution et à taille humaine, où les relations de proximité et la confiance prennent tout leur sens.",
+        "home_6": "Dès sa première visite à Bussigny, le Dr Popescu a été charmée par l'atmosphère conviviale et le dynamisme de la région. Situé à deux pas de la gare, son cabinet est conçu comme un espace accessible, moderne et rassurant — où chaque patient est accueilli avec soin et attention.",
+        "home_7": "Créer des sourires durables dans un environnement de confiance",
+        "home_8": "Le Dr Popescu croit fermement en une approche personnalisée de la dentisterie. Elle prend le temps d'expliquer chaque étape du traitement, quelle que soit la complexité du cas, afin que les patients se sentent en confiance et bien informés.",
+        "home_9": "Elle accueille aussi bien les enfants que les adultes, avec une attention particulière portée aux patients anxieux ou aux tout-petits qui reçoivent des soins pour la première fois. Son objectif : allier compétence, douceur et précision pour vous aider à obtenir un sourire sain et éclatant dans les meilleures conditions possibles.",
+        "home_10": "Contactez-nous dès aujourd'hui et découvrez les soins dentaires d'excellence que vous méritez !"
+    }
+}
