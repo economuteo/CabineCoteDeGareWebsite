@@ -1,8 +1,16 @@
-import Wrapper from "../assets/wrappers/Home";
-import homePhoto from "../assets/images/cabinet-dentaire-bussigny-355.jpg";
 import { useTranslation } from "react-i18next";
+import Wrapper from "../assets/wrappers/Home";
+import { ServiceCard } from "../components";
+import homePhoto from "../assets/images/cabinet-dentaire-bussigny-355.jpg";
 import homePozaProfil1 from "../assets/images/home-poza-profil.webp";
 import homePozaProfil2 from "../assets/images/home-poza-profil-2.webp";
+import homeCard1 from "../assets/images/home-card-1.jpg";
+import homeCard2 from "../assets/images/home-card-2.jpg";
+import homeCard3 from "../assets/images/home-card-3.jpg";
+import homeCard4 from "../assets/images/home-card-4.jpg";
+import homeCard5 from "../assets/images/home-card-5.jpg";
+import homeCard6 from "../assets/images/home-card-6.jpg";
+import homeCard7 from "../assets/images/home-card-7.jpg";
 
 const Home = () => {
     const { t } = useTranslation();
@@ -45,6 +53,65 @@ const Home = () => {
                 </div>
                 <div className="content-2-second">
                     <img id="secondPhoto" src={homePozaProfil1} alt="" />
+                </div>
+            </div>
+            <div className="container content-3">
+                <p className="home-11">{t("home.home_11")}</p>
+                <div className="dental-services">
+                    <div id="first-column" className="dental-services-column">
+                        <ServiceCard
+                            image={homeCard1}
+                            title={t("home.home_12")}
+                            description={t("home.home_card_description")}
+                            to="/services/dental-hygiene"
+                        />
+                        <ServiceCard
+                            image={homeCard2}
+                            title={t("home.home_13")}
+                            description={t("home.home_card_description")}
+                            to="/services/dental"
+                        />
+                    </div>
+                    <div id="second-column" className="dental-services-column">
+                        <ServiceCard
+                            image={homeCard3}
+                            title={t("home.home_14")}
+                            description={t("home.home_card_description")}
+                        />
+                        <ServiceCard
+                            image={homeCard4}
+                            title={t("home.home_15")}
+                            description={t("home.home_card_description")}
+                        />
+                        <ServiceCard
+                            image={homeCard5}
+                            title={t("home.home_16")}
+                            description={t("home.home_card_description")}
+                        />
+                    </div>
+                    <div id="third-column" className="dental-services-column">
+                        <ServiceCard
+                            image={homeCard6}
+                            title={t("home.home_17")}
+                            description={t("home.home_card_description")}
+                        />
+                        <ServiceCard
+                            image={homeCard7}
+                            title={t("home.home_18")}
+                            description={t("home.home_card_description")}
+                        />
+                    </div>
+                </div>
+            </div>
+            <div className="content-4">
+                <p className="container home-19">{t("home.home_19")}</p>
+                <div className="content-4-photos">
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
                 </div>
             </div>
         </Wrapper>

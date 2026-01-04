@@ -1,54 +1,86 @@
+import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import Wrapper from "../assets/wrappers/SideActions";
 
+const LANGUAGES = [
+    { code: "en", label: "EN" },
+    { code: "fr", label: "FR" },
+    { code: "al", label: "AL" },
+    { code: "de", label: "DE" },
+    { code: "es", label: "ES" },
+    { code: "pt", label: "PT" },
+    { code: "it", label: "IT" },
+];
+
 const SideActions = () => {
+    const { i18n } = useTranslation();
+    const currentLangCode = (i18n.resolvedLanguage || i18n.language || "en").toLowerCase();
+    const currentLang = currentLangCode.toUpperCase();
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const dropdownRef = useRef(null);
+
+    const toggleDropdown = () => setIsDropdownOpen((open) => !open);
+
+    const handleLanguageChange = (lang) => {
+        i18n.changeLanguage(lang);
+        setIsDropdownOpen(false);
+    };
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (
+                isDropdownOpen &&
+                dropdownRef.current &&
+                !dropdownRef.current.contains(event.target)
+            ) {
+                setIsDropdownOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, [isDropdownOpen]);
+
     return (
         <Wrapper>
-            <a class="whatsapp-btn" href="https://api.whatsapp.com/send?phone=41783006383">
+            <a className="whatsapp-btn" href="https://api.whatsapp.com/send?phone=41783006383">
                 <span>Whatsapp</span>
             </a>
-            {/* <div class="culture-container" b-vro3i4vx3n="">
-                <nav class="CultureNav navbar w-100 navbar-light  navbar-expand-lg" b-vro3i4vx3n="">
-                    <div id="navbarSupportedContent" class="w-100" b-vro3i4vx3n="">
-                        <ul class="navbar-nav mr-auto w-100" b-vro3i4vx3n="">
-                            <li class="nav-item dropdown  w-100" b-vro3i4vx3n="">
-                                <a
-                                    class="nav-link dropdown-toggle m-0"
-                                    id="navbarDropdown"
+            <div className="culture-container">
+                <nav className="CultureNav navbar navbar-light navbar-expand-lg">
+                    <div id="navbarSupportedContent">
+                        <div className="navbar-nav mr-auto">
+                            <div className="nav-item dropdown" ref={dropdownRef}>
+                                <div
                                     role="button"
-                                    data-bs-toggle="dropdown"
+                                    className="dropdown-item"
+                                    id="navbarDropdown"
                                     aria-haspopup="true"
-                                    aria-expanded="false"
-                                    b-vro3i4vx3n="">
-                                    EN
-                                </a>
-
-                                <ul
-                                    class="dropdown-menu"
-                                    aria-labelledby="navbarDropdown"
-                                    style="list-style-type:none"
-                                    b-vro3i4vx3n="">
-                                    <li b-vro3i4vx3n="">
-                                        <a
-                                            href="/en"
-                                            class="dropdown-item active"
-                                            aria-current="page">
-                                            EN
-                                        </a>
-                                    </li>
-                                    <li b-vro3i4vx3n="">
-                                        <a
-                                            href="/"
-                                            class="dropdown-item active"
-                                            aria-current="page">
-                                            FR
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                                    aria-expanded={isDropdownOpen}
+                                    onClick={toggleDropdown}>
+                                    {currentLang}
+                                </div>
+                                <div className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}>
+                                    {LANGUAGES.filter(({ code }) => code !== currentLangCode).map(
+                                        ({ code, label }) => (
+                                            <div key={code}>
+                                                <div
+                                                    role="button"
+                                                    className={`dropdown-item ${
+                                                        currentLang === label ? "active" : ""
+                                                    }`}
+                                                    onClick={() => handleLanguageChange(code)}>
+                                                    {label}
+                                                </div>
+                                            </div>
+                                        )
+                                    )}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </nav>
-            </div> */}
+            </div>
         </Wrapper>
     );
 };

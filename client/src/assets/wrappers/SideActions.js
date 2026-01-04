@@ -34,6 +34,42 @@ const Wrapper = styled.div`
         box-shadow: none;
         border: 0;
     }
+
+    .nav-item.dropdown {
+        position: relative;
+    }
+
+    .dropdown-menu {
+        display: none;
+        grid-template-columns: 1fr 1fr;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        z-index: 4;
+    }
+
+    .dropdown-menu.show {
+        display: grid;
+    }
+
+    .dropdown-item {
+        padding: 7px;
+        width: 38px;
+        height: 38px;
+        color: #fff !important;
+        background: #738b69;
+        font-weight: 600;
+        font-size: 13px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    .dropdown-item:hover {
+        background-color: #5a6c52;
+    }
 `;
 
 export default Wrapper;

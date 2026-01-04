@@ -316,8 +316,95 @@ const Wrapper = styled.section`
                 }
             }
         }
+    }
 
-        #secondPhoto {
+    .content-3 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        .home-11 {
+            margin-bottom: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 3.3rem;
+            font-family: "Playfair", serif;
+
+            @media only screen and (max-width: 1490px) {
+                font-size: 2.5rem;
+            }
+
+            @media only screen and (max-width: 990px) {
+                font-size: 2.3rem;
+            }
+
+            @media only screen and (max-width: 576px) {
+                font-size: 2rem;
+            }
+        }
+
+        .dental-services {
+            margin-top: 48px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 48px;
+
+            #first-column {
+                padding-top: 215px;
+            }
+
+            #second-column {
+            }
+
+            #third-column {
+                padding-top: 215px;
+            }
+
+            .dental-services-column {
+                display: flex;
+                flex-direction: column;
+                gap: 48px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                gap: 48px;
+
+                #first-column {
+                    padding-top: 0px;
+                }
+
+                #third-column {
+                    padding-top: 0px;
+                }
+            }
+        }
+    }
+
+    .content-4 {
+        width: 100%;
+        padding-top: 80px;
+        background-color: #414141;
+
+        .home-19 {
+            margin-bottom: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #738b69 !important;
+            font-size: 3.3rem;
+            font-family: "Playfair", serif;
+
+            @media only screen and (max-width: 1490px) {
+                font-size: 2.5rem;
+            }
+
+            @media only screen and (max-width: 990px) {
+                font-size: 2.3rem;
+            }
+
+            @media only screen and (max-width: 576px) {
+                font-size: 2rem;
+            }
         }
     }
 
