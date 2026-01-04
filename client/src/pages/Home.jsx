@@ -11,6 +11,12 @@ import homeCard4 from "../assets/images/home-card-4.jpg";
 import homeCard5 from "../assets/images/home-card-5.jpg";
 import homeCard6 from "../assets/images/home-card-6.jpg";
 import homeCard7 from "../assets/images/home-card-7.jpg";
+import homeGallery1 from "../assets/images/home-gallery-1.webp";
+import homeGallery2 from "../assets/images/home-gallery-2.jpg";
+import homeGallery3 from "../assets/images/home-gallery-3.webp";
+import homeGallery4 from "../assets/images/home-gallery-4.jpg";
+import homeGallery5 from "../assets/images/home-gallery-5.webp";
+import homeGallery6 from "../assets/images/home-gallery-6.jpg";
 
 const Home = () => {
     const { t } = useTranslation();
@@ -106,12 +112,24 @@ const Home = () => {
             <div className="content-4">
                 <p className="container home-19">{t("home.home_19")}</p>
                 <div className="content-4-photos">
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
+                    <div className="image-container">
+                        <img src={homeGallery1} />
+                    </div>
+                    <div className="image-container">
+                        <img src={homeGallery2} />
+                    </div>
+                    <div className="image-container">
+                        <img src={homeGallery3} />
+                    </div>
+                    <div className="image-container">
+                        <img src={homeGallery4} />
+                    </div>
+                    <div className="image-container">
+                        <img src={homeGallery5} />
+                    </div>
+                    <div className="image-container">
+                        <img src={homeGallery6} />
+                    </div>
                 </div>
             </div>
         </Wrapper>

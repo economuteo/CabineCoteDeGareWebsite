@@ -406,6 +406,42 @@ const Wrapper = styled.section`
                 font-size: 2rem;
             }
         }
+
+        .content-4-photos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+
+            @media only screen and (max-width: 990px) {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, auto);
+            }
+
+            .image-container {
+                width: 100%;
+                height: 395px;
+                overflow: hidden;
+
+                @media only screen and (max-width: 990px) {
+                    height: 295px;
+                }
+
+                @media only screen and (max-width: 767px) {
+                    height: 200px;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all 0.5s;
+            }
+
+            img:hover {
+                transform: scale(1.1);
+            }
+        }
     }
 
     .introduction {
