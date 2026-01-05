@@ -17,6 +17,10 @@ import homeGallery3 from "../assets/images/home-gallery-3.webp";
 import homeGallery4 from "../assets/images/home-gallery-4.jpg";
 import homeGallery5 from "../assets/images/home-gallery-5.webp";
 import homeGallery6 from "../assets/images/home-gallery-6.jpg";
+import homeTeam1 from "../assets/images/home-team-1.webp";
+import homeTeam2 from "../assets/images/home-team-2.webp";
+import homeTeam3 from "../assets/images/home-team-3.webp";
+import homeTeam4 from "../assets/images/home-team-4.webp";
 
 const Home = () => {
     const { t } = useTranslation();
@@ -129,6 +133,47 @@ const Home = () => {
                     </div>
                     <div className="image-container">
                         <img src={homeGallery6} />
+                    </div>
+                </div>
+            </div>
+            <div className="container content-5">
+                <p className="home-20">{t("home.home_20")}</p>
+                <div className="top-blogs-short"></div>
+            </div>
+            <div className="container content-6">
+                <p className="home-21">{t("home.home_21")}</p>
+                <div className="team-members">
+                    <div className="team-member">
+                        <img loading="lazy" src={homeTeam1} />
+                        <div>
+                            <p className="team-member-name">{t("home.home_24")}</p>
+                            <p className="team-member-role">{t("home.home_22")}</p>
+                            <p className="team-member-description">{t("home.home_23")}</p>
+                        </div>
+                    </div>
+                    <div className="team-member member-right">
+                        <img loading="lazy" src={homeTeam2} />
+                        <div>
+                            <p className="team-member-name">{t("home.home_27")}</p>
+                            <p className="team-member-role">{t("home.home_25")}</p>
+                            <p className="team-member-description">{t("home.home_26")}</p>
+                        </div>
+                    </div>
+                    <div className="team-member">
+                        <img loading="lazy" src={homeTeam3} />
+                        <div>
+                            <p className="team-member-name">{t("home.home_30")}</p>
+                            <p className="team-member-role">{t("home.home_28")}</p>
+                            <p className="team-member-description">{t("home.home_29")}</p>
+                        </div>
+                    </div>
+                    <div className="team-member member-right">
+                        <img loading="lazy" src={homeTeam4} />
+                        <div>
+                            <p className="team-member-name">{t("home.home_33")}</p>
+                            <p className="team-member-role">{t("home.home_31")}</p>
+                            <p className="team-member-description">{t("home.home_32")}</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -322,6 +322,16 @@ const Wrapper = styled.section`
         padding-top: 80px;
         padding-bottom: 80px;
 
+        @media only screen and (max-width: 990px) {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        @media only screen and (max-width: 576px) {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
         .home-11 {
             margin-bottom: 15px;
             text-align: center;
@@ -386,6 +396,14 @@ const Wrapper = styled.section`
         padding-top: 80px;
         background-color: #414141;
 
+        @media only screen and (max-width: 990px) {
+            padding-top: 4rem;
+        }
+
+        @media only screen and (max-width: 576px) {
+            padding-top: 3rem;
+        }
+
         .home-19 {
             margin-bottom: 24px;
             text-align: center;
@@ -441,6 +459,158 @@ const Wrapper = styled.section`
             img:hover {
                 transform: scale(1.1);
             }
+        }
+    }
+
+    .content-5 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        .home-20 {
+            margin: 0 0 15px 0;
+            font-size: 3.3rem;
+            font-weight: 500;
+            line-height: 1.2;
+            font-family: "Playfair", serif;
+            color: #738b69 !important;
+            text-align: center;
+            text-transform: uppercase !important;
+
+            @media only screen and (max-width: 1490px) {
+                font-size: 2.5rem;
+            }
+
+            @media only screen and (max-width: 990px) {
+                font-size: 2.3rem;
+            }
+
+            @media only screen and (max-width: 576px) {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .content-6 {
+        padding-bottom: 80px;
+
+        @media only screen and (max-width: 990px) {
+            padding-bottom: 4rem;
+        }
+
+        @media only screen and (max-width: 576px) {
+            padding-bottom: 3rem;
+        }
+
+        .home-21 {
+            margin: 0 0 15px 0;
+            font-size: 3.3rem;
+            font-weight: 500;
+            line-height: 1.2;
+            font-family: "Playfair", serif;
+            color: #738b69 !important;
+            text-align: center;
+            text-transform: uppercase !important;
+
+            @media only screen and (max-width: 1490px) {
+                font-size: 2.5rem;
+            }
+
+            @media only screen and (max-width: 990px) {
+                font-size: 2.3rem;
+            }
+
+            @media only screen and (max-width: 576px) {
+                font-size: 2rem;
+            }
+        }
+
+        .team-members {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+        }
+
+        .team-member {
+            display: flex;
+            align-items: center;
+            gap: 48px;
+
+            @media only screen and (max-width: 767px) {
+                flex-direction: column;
+            }
+
+            img {
+                width: 100%;
+
+                @media only screen and (min-width: 768px) {
+                    width: 41.66%;
+                }
+
+                @media only screen and (min-width: 992px) {
+                    width: 33%;
+                }
+            }
+
+            .team-member-name {
+                margin-bottom: 8px;
+                line-height: 1.2;
+                color: #000;
+                font-family: "Playfair", serif;
+                font-size: 2.2rem;
+                font-weight: 500;
+
+                @media only screen and (max-width: 1490px) {
+                    font-size: 2rem;
+                }
+
+                @media only screen and (max-width: 990px) {
+                    font-size: 1.8rem;
+                }
+
+                @media only screen and (max-width: 576px) {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .team-member-role {
+                margin-bottom: 16px;
+                color: #738b69 !important;
+                line-height: 1.2;
+                font-family: "Playfair", serif;
+                font-size: 1.5rem;
+                font-weight: 600;
+
+                @media only screen and (max-width: 1490px) {
+                    font-size: 1.4rem;
+                }
+
+                @media only screen and (max-width: 990px) {
+                    font-size: 1.3rem;
+                }
+            }
+
+            .team-member-description {
+                color: #212529;
+                font-family: "Plus Jakarta Sans", sans-serif;
+            }
+        }
+
+        .member-right {
+            @media only screen and (min-width: 768px) {
+                text-align: right;
+                flex-direction: row-reverse;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+            min-height: 100%;
+            transition: all 0.3s;
         }
     }
 
