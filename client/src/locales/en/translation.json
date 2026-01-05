@@ -6,7 +6,8 @@
         "blog": "BLOG",
         "contact": "CONTACT",
         "careers": "CAREERS",
-        "book_appointment": "BOOK APPOINTMENT"
+        "book_appointment": "BOOK APPOINTMENT",
+        "appointment_request": "APPOINTMENT REQUEST"
     },
     "home": {
         "read_all": "READ MORE",
@@ -43,6 +44,16 @@
         "home_30": "Tatiana Mendez",
         "home_31": "Apprentice Dental Assistant",
         "home_32": "We are pleased to welcome Stefania, our new apprentice, who joined our team in August 2025. Dynamic and motivated, she brings a fresh perspective and a real desire to learn. We are happy to support her in her journey and to share our expertise with her.",
-        "home_33": "Stefania Ciobanu"
+        "home_33": "Stefania Ciobanu",
+        "home_34": "Contact Info",
+        "home_35": "Telephone",
+        "home_36": "E-mail",
+        "home_37": "Hours",
+        "home_38": "Monday-Friday",
+        "home_39": "Saturday",
+        "home_40": "Sunday",
+        "home_41": "Closed",
+        "home_42": "Appointment Request",
+        "home_43": "Fill in the form below and we will contact you as soon as possible."
     }
 }

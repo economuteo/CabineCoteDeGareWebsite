@@ -6,7 +6,8 @@
         "blog": "BLOG",
         "contact": "CONTATTI",
         "careers": "CARRIERA",
-        "book_appointment": "PRENOTA APPUNTAMENTO"
+        "book_appointment": "PRENOTA APPUNTAMENTO",
+        "appointment_request": "RICHIESTA DI APPUNTAMENTO"
     },
     "home": {
         "read_all": "LEGGI DI PIÙ",
@@ -43,6 +44,16 @@
         "home_30": "Tatiana Mendez",
         "home_31": "Assistente dentale apprendista",
         "home_32": "Siamo lieti di accogliere Stefania, la nostra nuova apprendista, che si è unita al nostro team nell'agosto 2025. Dinamica e motivata, porta una prospettiva fresca e un vero desiderio di imparare. Siamo felici di accompagnarla nel suo percorso e di condividere con lei la nostra esperienza.",
-        "home_33": "Stefania Ciobanu"
+        "home_33": "Stefania Ciobanu",
+        "home_34": "Informazioni di contatto",
+        "home_35": "Telefono",
+        "home_36": "E-mail",
+        "home_37": "Orari",
+        "home_38": "Lunedì-Venerdì",
+        "home_39": "Sabato",
+        "home_40": "Domenica",
+        "home_41": "Chiuso",
+        "home_42": "Richiesta di appuntamento",
+        "home_43": "Compili il modulo qui sotto e la contatteremo il prima possibile."
     }
 }

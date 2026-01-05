@@ -6,7 +6,8 @@
         "blog": "BLOG",
         "contact": "KONTAKTI",
         "careers": "KARRIERA",
-        "book_appointment": "REZERVO TERMININ"
+        "book_appointment": "REZERVO TERMININ",
+        "appointment_request": "KËRKESË PËR TAKIM"
     },
     "home": {
         "read_all": "LEXO MË SHUMË",
@@ -43,6 +44,16 @@
         "home_30": "Tatiana Mendez",
         "home_31": "Asistente dentare praktikante",
         "home_32": "Kemi kënaqësinë të mirëpresim Stefania-n, praktikanten tonë të re, e cila u bashkua me ekipin tonë në gusht 2025. Dinamike dhe e motivuar, ajo sjell një perspektivë të re dhe një dëshirë të vërtetë për të mësuar. Jemi të lumtur ta shoqërojmë atë në udhëtimin e saj dhe të ndajmë me të ekspertizën tonë.",
-        "home_33": "Stefania Ciobanu"
+        "home_33": "Stefania Ciobanu",
+        "home_34": "Të dhënat e kontaktit",
+        "home_35": "Telefoni",
+        "home_36": "E-mail",
+        "home_37": "Orari",
+        "home_38": "E hënë-E premte",
+        "home_39": "E shtunë",
+        "home_40": "E diel",
+        "home_41": "Mbyllur",
+        "home_42": "Kërkesë për takim",
+        "home_43": "Plotësoni formularin më poshtë dhe ne do t'ju kontaktojmë sa më shpejt të jetë e mundur."
     }
 }

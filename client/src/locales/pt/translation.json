@@ -6,7 +6,8 @@
         "blog": "BLOG",
         "contact": "CONTACTO",
         "careers": "CARREIRAS",
-        "book_appointment": "MARCAR CONSULTA"
+        "book_appointment": "MARCAR CONSULTA",
+        "appointment_request": "PEDIDO DE CONSULTA"
     },
     "home": {
         "read_all": "LER MAIS",
@@ -43,6 +44,16 @@
         "home_30": "Tatiana Mendez",
         "home_31": "Assistente dentária aprendiz",
         "home_32": "Temos o prazer de dar as boas-vindas a Stefania, a nossa nova aprendiz, que se juntou à nossa equipa em agosto de 2025. Dinâmica e motivada, traz uma perspetiva renovada e uma vontade real de aprender. Estamos felizes por a acompanhar no seu percurso e partilhar com ela o nosso saber-fazer.",
-        "home_33": "Stefania Ciobanu"
+        "home_33": "Stefania Ciobanu",
+        "home_34": "Informações de contato",
+        "home_35": "Telefone",
+        "home_36": "E-mail",
+        "home_37": "Horário",
+        "home_38": "Segunda a Sexta",
+        "home_39": "Sábado",
+        "home_40": "Domingo",
+        "home_41": "Fechado",
+        "home_42": "Pedido de consulta",
+        "home_43": "Preencha o formulário abaixo e entraremos em contato o mais breve possível."
     }
 }

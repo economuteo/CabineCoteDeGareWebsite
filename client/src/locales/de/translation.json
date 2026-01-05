@@ -6,7 +6,8 @@
         "blog": "BLOG",
         "contact": "KONTAKT",
         "careers": "KARRIERE",
-        "book_appointment": "TERMIN BUCHEN"
+        "book_appointment": "TERMIN BUCHEN",
+        "appointment_request": "TERMINANFRAGE"
     },
     "home": {
         "read_all": "MEHR LESEN",
@@ -43,6 +44,16 @@
         "home_30": "Tatiana Mendez",
         "home_31": "Auszubildende Zahnarzthelferin",
         "home_32": "Wir freuen uns, Stefania, unsere neue Auszubildende, begrüßen zu dürfen, die im August 2025 unserem Team beigetreten ist. Dynamisch und motiviert bringt sie eine frische Perspektive und echte Lernbereitschaft mit. Wir freuen uns, sie auf ihrem Weg zu begleiten und unser Fachwissen mit ihr zu teilen.",
-        "home_33": "Stefania Ciobanu"
+        "home_33": "Stefania Ciobanu",
+        "home_34": "Kontaktinformationen",
+        "home_35": "Telefon",
+        "home_36": "E-Mail",
+        "home_37": "Öffnungszeiten",
+        "home_38": "Montag–Freitag",
+        "home_39": "Samstag",
+        "home_40": "Sonntag",
+        "home_41": "Geschlossen",
+        "home_42": "Terminanfrage",
+        "home_43": "Füllen Sie das untenstehende Formular aus und wir werden Sie so schnell wie möglich kontaktieren."
     }
 }

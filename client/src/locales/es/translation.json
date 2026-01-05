@@ -6,7 +6,8 @@
         "blog": "BLOG",
         "contact": "CONTACTO",
         "careers": "EMPLEO",
-        "book_appointment": "PEDIR CITA"
+        "book_appointment": "PEDIR CITA",
+        "appointment_request": "SOLICITUD DE CITA"
     },
     "home": {
         "read_all": "LEER MÁS",
@@ -43,6 +44,16 @@
         "home_30": "Tatiana Mendez",
         "home_31": "Asistente dental en formación",
         "home_32": "Tenemos el placer de dar la bienvenida a Stefania, nuestra nueva aprendiz, que se unió a nuestro equipo en agosto de 2025. Dinámica y motivada, aporta una perspectiva fresca y unas ganas reales de aprender. Estamos felices de acompañarla en su camino y compartir con ella nuestra experiencia.",
-        "home_33": "Stefania Ciobanu"
+        "home_33": "Stefania Ciobanu",
+        "home_34": "Información de contacto",
+        "home_35": "Teléfono",
+        "home_36": "Correo electrónico",
+        "home_37": "Horario",
+        "home_38": "Lunes-Viernes",
+        "home_39": "Sábado",
+        "home_40": "Domingo",
+        "home_41": "Cerrado",
+        "home_42": "Solicitud de cita",
+        "home_43": "Complete el formulario a continuación y nos pondremos en contacto con usted lo antes posible."
     }
 }

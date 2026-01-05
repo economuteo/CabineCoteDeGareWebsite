@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Wrapper from "../assets/wrappers/Home";
-import { ServiceCard } from "../components";
+import { ServiceCard, GoogleMapEmbed } from "../components";
 import homePhoto from "../assets/images/cabinet-dentaire-bussigny-355.jpg";
 import homePozaProfil1 from "../assets/images/home-poza-profil.webp";
 import homePozaProfil2 from "../assets/images/home-poza-profil-2.webp";
@@ -21,6 +21,9 @@ import homeTeam1 from "../assets/images/home-team-1.webp";
 import homeTeam2 from "../assets/images/home-team-2.webp";
 import homeTeam3 from "../assets/images/home-team-3.webp";
 import homeTeam4 from "../assets/images/home-team-4.webp";
+import facebookLogo from "../assets/images/facebook-logo.webp";
+import instagramLogo from "../assets/images/instagram-logo.webp";
+import whatsappLogo from "../assets/images/whatsapp-logo.webp";
 
 const Home = () => {
     const { t } = useTranslation();
@@ -173,6 +176,157 @@ const Home = () => {
                             <p className="team-member-name">{t("home.home_33")}</p>
                             <p className="team-member-role">{t("home.home_31")}</p>
                             <p className="team-member-description">{t("home.home_32")}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="content-7">
+                <div className="map">
+                    <GoogleMapEmbed />
+                </div>
+                <div className="contact">
+                    <p className="contact-title text-uppercase">{t("home.home_34")}</p>
+                    <div className="zone">
+                        <p className="zone-title text-uppercase">{t("home.home_35")}:</p>
+                        <p className="zone-description">0212189218</p>
+                        <p className="zone-description">0783006383</p>
+                    </div>
+
+                    <div className="zone">
+                        <p className="zone-title text-uppercase">{t("home.home_36")}:</p>
+                        <p className="zone-description">info@dentiste-cote-gare-bussigny.ch</p>
+                    </div>
+
+                    <div className="zone">
+                        <p className="zone-title text-uppercase">{t("home.home_37")}:</p>
+                        <p className="zone-description">{t("home.home_38")}: 8h00 - 20h00</p>
+                        <p className="zone-description">{t("home.home_39")}: 9h00 - 15h00</p>
+                        <p className="zone-description">
+                            {t("home.home_40")}: {t("home.home_41")}
+                        </p>
+                    </div>
+
+                    <div className="socials">
+                        <a
+                            href="https://www.facebook.com/p/Cabinet-dentaire-c%C3%B4t%C3%A9-gare-Bussigny-61566890726236/"
+                            target="_blank">
+                            <img src={facebookLogo} alt="facebook" />
+                        </a>
+                        <a
+                            href="https://www.instagram.com/cabinet_cote_gare_bussigny/"
+                            target="_blank">
+                            <img src={instagramLogo} alt="" />
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=41783006383" target="_blank">
+                            <img src={whatsappLogo} alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div className="container content-8">
+                <p className="title text-uppercase">{t("home.home_42")}</p>
+                <p className="description">{t("home.home_43")}</p>
+
+                <div className="row form-row mb-3">
+                    <div className="col-md-6">
+                        <div className="form-group">
+                            <input placeholder="Name*" name="Name" className="form-control valid" />
+                            <span className="text-danger"></span>
+                        </div>
+                    </div>
+                    <div className="col-md-6">
+                        <div className="form-group">
+                            <input
+                                placeholder="Email*"
+                                name="Email"
+                                className="form-control valid"
+                            />
+                            <span className="text-danger"></span>
+                        </div>
+                    </div>
+                    <div className="col-md-6">
+                        <div className="form-group">
+                            <input
+                                placeholder="Phone*"
+                                name="PhoneNumber"
+                                className="form-control valid"
+                            />
+                            <span className="text-danger"></span>
+                        </div>
+                    </div>
+                    <div className="col-md-6">
+                        <div className="form-group">
+                            <input
+                                placeholder="Service"
+                                name="Service"
+                                className="form-control valid"
+                            />
+                            <span className="text-danger"></span>
+                        </div>
+                    </div>
+                    <div className="col-md-12">
+                        <div className="form-group">
+                            <input
+                                placeholder="Visit Purpose"
+                                name="VisitReason"
+                                className="form-control valid"
+                            />
+                            <span className="text-danger"></span>
+                        </div>
+                    </div>
+                    <div className="col-md-6">
+                        <div className="form-group">
+                            <input
+                                placeholder="Date"
+                                name="Date"
+                                className="form-control valid"
+                                type="date"
+                            />
+                            <span className="text-danger"></span>
+                        </div>
+                    </div>
+                    <div className="col-md-6">
+                        <div className="form-group">
+                            <input
+                                placeholder="Time"
+                                name="Time"
+                                className="form-control valid"
+                                type="time"
+                            />
+                            <span className="text-danger"></span>
+                        </div>
+                    </div>
+                    <div className="col-md-12">
+                        <label className="user-consent white-txt mb-3 mt-3 fw-500">
+                            <input
+                                type="checkbox"
+                                required
+                                style={{ width: "20px" }}
+                                name="DeliveryCheckoutUserConsent"
+                            />
+                            <span>
+                                I agree with the{" "}
+                                <a
+                                    className="white-txt text-decoration-underline"
+                                    href="/en/terms-and-conditions"
+                                    target="_blank"
+                                    rel="noreferrer">
+                                    terms and conditions
+                                </a>{" "}
+                                and{" "}
+                                <a
+                                    className="white-txt text-decoration-underline"
+                                    href="/en/privacy-policy"
+                                    target="_blank"
+                                    rel="noreferrer">
+                                    privacy policy
+                                </a>
+                            </span>
+                        </label>
+                        <div className="form-group d-flex justify-content-center">
+                            <button type="submit" className="btn-primary">
+                                Make appointment
+                            </button>
                         </div>
                     </div>
                 </div>
