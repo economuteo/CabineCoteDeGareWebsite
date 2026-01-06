@@ -31,7 +31,7 @@ const Home = () => {
     return (
         <Wrapper>
             <div className="content">
-                {/* <img src={homePhoto} alt="Cabinet dentaire Bussigny" height="500" /> */}
+                <img src={homePhoto} alt="Cabinet dentaire Bussigny" height="500" />
                 <div className="content-description container">
                     <p className="banner-title">{t("home.home_1")}</p>
                     <div className="buttons">
