@@ -21,6 +21,7 @@ import homeTeam1 from "../assets/images/home-team-1.webp";
 import homeTeam2 from "../assets/images/home-team-2.webp";
 import homeTeam3 from "../assets/images/home-team-3.webp";
 import homeTeam4 from "../assets/images/home-team-4.webp";
+// import homeParralax from "../assets/images/home-parallax.webp";
 import facebookLogo from "../assets/images/facebook-logo.webp";
 import instagramLogo from "../assets/images/instagram-logo.webp";
 import whatsappLogo from "../assets/images/whatsapp-logo.webp";
@@ -223,109 +224,111 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="container content-8">
-                <p className="title text-uppercase">{t("home.home_42")}</p>
-                <p className="description">{t("home.home_43")}</p>
+            <div className="content-8">
+                <div className="container">
+                    <p className="title text-uppercase">{t("home.home_42")}</p>
+                    <p className="description">{t("home.home_43")}</p>
 
-                <form method="post" className="form-horizontal">
-                    <div className="form">
-                        <div className="row">
+                    <form method="post" className="form-horizontal">
+                        <div className="form-inputs">
+                            <div className="row">
+                                <div className="col">
+                                    <input
+                                        placeholder="Name*"
+                                        name="Name"
+                                        className="form-control valid"
+                                    />
+                                    <span className="text-danger"></span>
+                                </div>
+                                <div className="col">
+                                    <input
+                                        placeholder="Email*"
+                                        name="Email"
+                                        className="form-control valid"
+                                    />
+                                    <span className="text-danger"></span>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col">
+                                    <input
+                                        placeholder="Phone*"
+                                        name="PhoneNumber"
+                                        className="form-control valid"
+                                    />
+                                    <span className="text-danger"></span>
+                                </div>
+                                <div className="col">
+                                    <input
+                                        placeholder="Service"
+                                        name="Service"
+                                        className="form-control valid"
+                                    />
+                                    <span className="text-danger"></span>
+                                </div>
+                            </div>
                             <div className="col">
                                 <input
-                                    placeholder="Name*"
-                                    name="Name"
+                                    placeholder="Visit Purpose"
+                                    name="VisitReason"
                                     className="form-control valid"
                                 />
                                 <span className="text-danger"></span>
                             </div>
-                            <div className="col">
-                                <input
-                                    placeholder="Email*"
-                                    name="Email"
-                                    className="form-control valid"
-                                />
-                                <span className="text-danger"></span>
+                            <div className="row">
+                                <div className="col">
+                                    <input
+                                        placeholder="Date"
+                                        name="Date"
+                                        className="form-control valid"
+                                        type="text"
+                                    />
+                                    <span className="text-danger"></span>
+                                </div>
+                                <div className="col">
+                                    <input
+                                        placeholder="Time"
+                                        name="Time"
+                                        className="form-control valid"
+                                        type="text"
+                                    />
+                                    <span className="text-danger"></span>
+                                </div>
                             </div>
                         </div>
-                        <div className="row">
-                            <div className="col">
-                                <input
-                                    placeholder="Phone*"
-                                    name="PhoneNumber"
-                                    className="form-control valid"
-                                />
-                                <span className="text-danger"></span>
-                            </div>
-                            <div className="col">
-                                <input
-                                    placeholder="Service"
-                                    name="Service"
-                                    className="form-control valid"
-                                />
-                                <span className="text-danger"></span>
-                            </div>
-                        </div>
-                        <div className="col">
+                        <div className="col" id="agreement">
                             <input
-                                placeholder="Visit Purpose"
-                                name="VisitReason"
-                                className="form-control valid"
+                                id="checkbox"
+                                type="checkbox"
+                                required
+                                name="DeliveryCheckoutUserConsent"
                             />
-                            <span className="text-danger"></span>
+                            <span>
+                                I agree with the
+                                <a
+                                    className="white-txt text-decoration-underline"
+                                    href="/en/terms-and-conditions"
+                                    target="_blank"
+                                    rel="noreferrer">
+                                    {" "}
+                                    terms and conditions{" "}
+                                </a>
+                                and
+                                <a
+                                    className="white-txt text-decoration-underline"
+                                    href="/en/privacy-policy"
+                                    target="_blank"
+                                    rel="noreferrer">
+                                    {" "}
+                                    privacy policy
+                                </a>
+                            </span>
                         </div>
-                        <div className="col">
-                            <input
-                                placeholder="Date"
-                                name="Date"
-                                className="form-control valid"
-                                type="date"
-                            />
-                            <span className="text-danger"></span>
-                        </div>
-                        <div className="col">
-                            <input
-                                placeholder="Time"
-                                name="Time"
-                                className="form-control valid"
-                                type="time"
-                            />
-                            <span className="text-danger"></span>
-                        </div>
-                        <div className="col">
-                            <label className="user-consent white-txt mb-3 mt-3 fw-500">
-                                <input
-                                    type="checkbox"
-                                    required
-                                    style={{ width: "20px" }}
-                                    name="DeliveryCheckoutUserConsent"
-                                />
-                                <span>
-                                    I agree with the
-                                    <a
-                                        className="white-txt text-decoration-underline"
-                                        href="/en/terms-and-conditions"
-                                        target="_blank"
-                                        rel="noreferrer">
-                                        terms and conditions
-                                    </a>
-                                    and
-                                    <a
-                                        className="white-txt text-decoration-underline"
-                                        href="/en/privacy-policy"
-                                        target="_blank"
-                                        rel="noreferrer">
-                                        privacy policy
-                                    </a>
-                                </span>
-                            </label>
-                            <div className="form-group d-flex justify-content-center">
-                                <button type="submit" className="btn-primary">
-                                    Make appointment
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                        <button type="submit" className="btn-primary">
+                            Make appointment
+                        </button>
+                    </form>
+                </div>
             </div>
         </Wrapper>
     );

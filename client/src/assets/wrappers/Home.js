@@ -720,12 +720,30 @@ const Wrapper = styled.section`
     }
 
     .content-8 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: black;
         padding-top: 80px;
         padding-bottom: 80px;
+        width: 100%;
+        background-image: url("/src/assets/images/home-parallax.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        @media only screen and (max-width: 990px) {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        @media only screen and (max-width: 576px) {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
         .title {
             color: #738b69 !important;
@@ -757,18 +775,120 @@ const Wrapper = styled.section`
         form {
             width: 100%;
             max-width: 768px;
-        }
-
-        .form {
             margin-bottom: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-            .col {
-                width: 50%;
+            .form-inputs {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
 
                 input {
+                    padding: 15px;
                     width: 100%;
                     height: 100%;
+                    border: 1px solid #fff;
+                    border-radius: 0;
+                    box-shadow: none !important;
+                    padding: 15px 15px;
+                    background-color: transparent;
+                    color: #fff;
+                    font-family: "Plus Jakarta Sans", sans-serif;
+                    font-size: 1rem;
+                    outline: none;
+
+                    &:focus {
+                        border: 1px solid #fff;
+                        outline: none;
+                    }
+
+                    &::placeholder {
+                        color: #fff;
+                        opacity: 1;
+                    }
                 }
+
+                .col {
+                    width: 100%;
+                }
+
+                .row {
+                    display: flex;
+                    gap: 10px;
+
+                    @media only screen and (max-width: 767px) {
+                        flex-direction: column;
+                    }
+
+                    .col {
+                        width: 50%;
+
+                        @media only screen and (max-width: 767px) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            #agreement {
+                display: flex;
+                margin-top: 16px;
+                margin-bottom: 16px;
+                color: white;
+                font-family: "Plus Jakarta Sans", sans-serif;
+
+                #checkbox {
+                    height: 20px;
+                    width: 20px;
+                    border: 1px solid #dbdbdb;
+                    -webkit-appearance: none;
+                    border-radius: 5px;
+                    margin-top: 2px;
+                    margin-right: 10px;
+                    background-color: #fff;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:checked {
+                        background-color: #738b69;
+                        border-color: #738b69;
+                    }
+
+                    &:checked::after {
+                        content: "✓";
+                        color: white;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            button {
+                padding: 0.5rem 1.85rem;
+                display: inline-flex;
+                justify-content: center;
+                background: #738b69;
+                width: fit-content;
+                color: #fff;
+                border: 1px solid #fff;
+                border-radius: 0;
+                padding: 0.45rem 2rem;
+                font-family: "Plus Jakarta Sans", sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: uppercase;
+                position: relative;
+                text-decoration: none !important;
+                box-shadow: none !important;
+                z-index: 0;
+                overflow: hidden;
+                transition: all 0.3s;
+                cursor: pointer;
             }
         }
     }
