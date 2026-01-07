@@ -54,6 +54,23 @@
         "home_40": "Domenica",
         "home_41": "Chiuso",
         "home_42": "Richiesta di appuntamento",
-        "home_43": "Compili il modulo qui sotto e la contatteremo il prima possibile."
+        "home_43": "Compili il modulo qui sotto e la contatteremo il prima possibile.",
+        "form_name": "Nome*",
+        "form_email": "E-mail*",
+        "form_phone": "Telefono*",
+        "form_service": "Servizio",
+        "form_visit_purpose": "Motivo della visita",
+        "form_date": "Data",
+        "form_time": "Ora",
+        "form_agreement": "Accetto i",
+        "form_terms": "termini e condizioni",
+        "form_and": "e",
+        "form_privacy": "politica sulla privacy",
+        "form_submit": "Prenota appuntamento"
+    },
+    "footer": {
+        "question": "Hai",
+        "question_2": "domande",
+        "help": "Siamo felici di aiutarti!"
     }
 }

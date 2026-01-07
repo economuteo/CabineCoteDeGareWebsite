@@ -54,6 +54,23 @@
         "home_40": "Sonntag",
         "home_41": "Geschlossen",
         "home_42": "Terminanfrage",
-        "home_43": "Füllen Sie das untenstehende Formular aus und wir werden Sie so schnell wie möglich kontaktieren."
+        "home_43": "Füllen Sie das untenstehende Formular aus und wir werden Sie so schnell wie möglich kontaktieren.",
+        "form_name": "Name*",
+        "form_email": "E-Mail*",
+        "form_phone": "Telefon*",
+        "form_service": "Service",
+        "form_visit_purpose": "Besuchszweck",
+        "form_date": "Datum",
+        "form_time": "Uhrzeit",
+        "form_agreement": "Ich stimme den",
+        "form_terms": "Geschäftsbedingungen",
+        "form_and": "und",
+        "form_privacy": "Datenschutzrichtlinien",
+        "form_submit": "Termin vereinbaren"
+    },
+    "footer": {
+        "question": "Haben Sie",
+        "question_2": "Fragen",
+        "help": "Wir helfen Ihnen gerne!"
     }
 }

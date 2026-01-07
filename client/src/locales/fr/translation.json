@@ -54,6 +54,23 @@
         "home_40": "Dimanche",
         "home_41": "Fermé",
         "home_42": "Demande de rendez-vous",
-        "home_43": "Remplissez le formulaire ci-dessous et nous vous contacterons dans les plus brefs délais."
+        "home_43": "Remplissez le formulaire ci-dessous et nous vous contacterons dans les plus brefs délais.",
+        "form_name": "Nom*",
+        "form_email": "E-mail*",
+        "form_phone": "Téléphone*",
+        "form_service": "Service",
+        "form_visit_purpose": "Objet de la visite",
+        "form_date": "Date",
+        "form_time": "Heure",
+        "form_agreement": "J'accepte les",
+        "form_terms": "termes et conditions",
+        "form_and": "et",
+        "form_privacy": "politique de confidentialité",
+        "form_submit": "Prendre rendez-vous"
+    },
+    "footer": {
+        "question": "Avez-vous des",
+        "question_2": "questions",
+        "help": "Nous sommes ravis de vous aider !"
     }
 }

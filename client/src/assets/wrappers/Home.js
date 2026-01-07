@@ -811,6 +811,23 @@ const Wrapper = styled.section`
                     }
                 }
 
+                input[type="date"],
+                input[type="time"] {
+                    color-scheme: white;
+                    direction: ltr;
+                    text-align: left;
+
+                    &::-webkit-calendar-picker-indicator {
+                        filter: invert(1);
+                        cursor: pointer;
+                        margin-left: auto;
+                    }
+
+                    &::-webkit-date-and-time-value {
+                        text-align: left;
+                    }
+                }
+
                 .col {
                     width: 100%;
                 }

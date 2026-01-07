@@ -54,6 +54,23 @@
         "home_40": "E diel",
         "home_41": "Mbyllur",
         "home_42": "Kërkesë për takim",
-        "home_43": "Plotësoni formularin më poshtë dhe ne do t'ju kontaktojmë sa më shpejt të jetë e mundur."
+        "home_43": "Plotësoni formularin më poshtë dhe ne do t'ju kontaktojmë sa më shpejt të jetë e mundur.",
+        "form_name": "Emri*",
+        "form_email": "E-mail*",
+        "form_phone": "Telefoni*",
+        "form_service": "Sherbimi",
+        "form_visit_purpose": "Qellimi i vizites",
+        "form_date": "Data",
+        "form_time": "Ora",
+        "form_agreement": "Pranoj",
+        "form_terms": "termet dhe kushtet",
+        "form_and": "dhe",
+        "form_privacy": "politika e privatesise",
+        "form_submit": "Rezervo takim"
+    },
+    "footer": {
+        "question": "A keni ndonjë",
+        "question_2": "pyetje",
+        "help": "Jemi të lumtur t'ju ndihmojmë!"
     }
 }

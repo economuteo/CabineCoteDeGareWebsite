@@ -234,7 +234,7 @@ const Home = () => {
                             <div className="row">
                                 <div className="col">
                                     <input
-                                        placeholder="Name*"
+                                        placeholder={t("home.form_name")}
                                         name="Name"
                                         className="form-control valid"
                                     />
@@ -242,7 +242,7 @@ const Home = () => {
                                 </div>
                                 <div className="col">
                                     <input
-                                        placeholder="Email*"
+                                        placeholder={t("home.form_email")}
                                         name="Email"
                                         className="form-control valid"
                                     />
@@ -252,7 +252,7 @@ const Home = () => {
                             <div className="row">
                                 <div className="col">
                                     <input
-                                        placeholder="Phone*"
+                                        placeholder={t("home.form_phone")}
                                         name="PhoneNumber"
                                         className="form-control valid"
                                     />
@@ -260,7 +260,7 @@ const Home = () => {
                                 </div>
                                 <div className="col">
                                     <input
-                                        placeholder="Service"
+                                        placeholder={t("home.form_service")}
                                         name="Service"
                                         className="form-control valid"
                                     />
@@ -269,7 +269,7 @@ const Home = () => {
                             </div>
                             <div className="col">
                                 <input
-                                    placeholder="Visit Purpose"
+                                    placeholder={t("home.form_visit_purpose")}
                                     name="VisitReason"
                                     className="form-control valid"
                                 />
@@ -278,19 +278,19 @@ const Home = () => {
                             <div className="row">
                                 <div className="col">
                                     <input
-                                        placeholder="Date"
+                                        placeholder={t("home.form_date")}
                                         name="Date"
                                         className="form-control valid"
-                                        type="text"
+                                        type="date"
                                     />
                                     <span className="text-danger"></span>
                                 </div>
                                 <div className="col">
                                     <input
-                                        placeholder="Time"
+                                        placeholder={t("home.form_time")}
                                         name="Time"
                                         className="form-control valid"
-                                        type="text"
+                                        type="time"
                                     />
                                     <span className="text-danger"></span>
                                 </div>
@@ -304,28 +304,28 @@ const Home = () => {
                                 name="DeliveryCheckoutUserConsent"
                             />
                             <span>
-                                I agree with the
+                                {t("home.form_agreement")}
                                 <a
                                     className="white-txt text-decoration-underline"
                                     href="/en/terms-and-conditions"
                                     target="_blank"
                                     rel="noreferrer">
                                     {" "}
-                                    terms and conditions{" "}
+                                    {t("home.form_terms")}{" "}
                                 </a>
-                                and
+                                {t("home.form_and")}
                                 <a
                                     className="white-txt text-decoration-underline"
                                     href="/en/privacy-policy"
                                     target="_blank"
                                     rel="noreferrer">
                                     {" "}
-                                    privacy policy
+                                    {t("home.form_privacy")}
                                 </a>
                             </span>
                         </div>
                         <button type="submit" className="btn-primary">
-                            Make appointment
+                            {t("home.form_submit")}
                         </button>
                     </form>
                 </div>

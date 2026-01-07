@@ -54,6 +54,23 @@
         "home_40": "Domingo",
         "home_41": "Fechado",
         "home_42": "Pedido de consulta",
-        "home_43": "Preencha o formulário abaixo e entraremos em contato o mais breve possível."
+        "home_43": "Preencha o formulário abaixo e entraremos em contato o mais breve possível.",
+        "form_name": "Nome*",
+        "form_email": "E-mail*",
+        "form_phone": "Telefone*",
+        "form_service": "Serviço",
+        "form_visit_purpose": "Motivo da visita",
+        "form_date": "Data",
+        "form_time": "Hora",
+        "form_agreement": "Aceito os",
+        "form_terms": "termos e condições",
+        "form_and": "e",
+        "form_privacy": "política de privacidade",
+        "form_submit": "Marcar consulta"
+    },
+    "footer": {
+        "question": "Tem alguma",
+        "question_2": "perguntas",
+        "help": "Estamos felizes em ajudar!"
     }
 }

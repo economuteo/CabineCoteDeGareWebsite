@@ -54,6 +54,23 @@
         "home_40": "Sunday",
         "home_41": "Closed",
         "home_42": "Appointment Request",
-        "home_43": "Fill in the form below and we will contact you as soon as possible."
+        "home_43": "Fill in the form below and we will contact you as soon as possible.",
+        "form_name": "Name*",
+        "form_email": "Email*",
+        "form_phone": "Phone*",
+        "form_service": "Service",
+        "form_visit_purpose": "Visit Purpose",
+        "form_date": "Date",
+        "form_time": "Time",
+        "form_agreement": "I agree with the",
+        "form_terms": "terms and conditions",
+        "form_and": "and",
+        "form_privacy": "privacy policy",
+        "form_submit": "Make appointment"
+    },
+    "footer": {
+        "question": "Do you have any",
+        "question_2": "questions",
+        "help": "We are happy to help!"
     }
 }

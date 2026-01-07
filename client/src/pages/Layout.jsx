@@ -1,5 +1,5 @@
 import Wrapper from "../assets/wrappers/Outlet.js";
-import { Navbar, SideActions } from "../components";
+import { Navbar, SideActions, Footer } from "../components";
 import { Outlet } from "react-router-dom";
 
 const Layout = () => {
@@ -10,6 +10,7 @@ const Layout = () => {
                 <Outlet className="currentPage" />
             </Wrapper>
             <SideActions />
+            <Footer />
         </>
     );
 };
