@@ -71,6 +71,13 @@
     "footer": {
         "question": "Avez-vous des",
         "question_2": "questions",
-        "help": "Nous sommes ravis de vous aider !"
+        "help": "Nous sommes ravis de vous aider !",
+        "legal_notice": "Avis légal",
+        "privacy_policy": "Politique de confidentialité",
+        "home": "Accueil",
+        "specialties": "Spécialités",
+        "blog": "Blog",
+        "contact": "Contact",
+        "careers": "Carrière"
     }
 }

@@ -71,6 +71,13 @@
     "footer": {
         "question": "A keni ndonjë",
         "question_2": "pyetje",
-        "help": "Jemi të lumtur t'ju ndihmojmë!"
+        "help": "Jemi të lumtur t'ju ndihmojmë!",
+        "legal_notice": "Njoftim ligjor",
+        "privacy_policy": "Politika e privatësisë",
+        "home": "Ballina",
+        "specialties": "Specializimet",
+        "blog": "Blog",
+        "contact": "Kontakti",
+        "careers": "Karriera"
     }
 }

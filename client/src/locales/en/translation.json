@@ -71,6 +71,13 @@
     "footer": {
         "question": "Do you have any",
         "question_2": "questions",
-        "help": "We are happy to help!"
+        "help": "We are happy to help!",
+        "legal_notice": "Legal Notice",
+        "privacy_policy": "Privacy policy",
+        "home": "Home",
+        "specialties": "Specialties",
+        "blog": "Blog",
+        "contact": "Contact",
+        "careers": "Careers"
     }
 }

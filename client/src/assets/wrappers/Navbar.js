@@ -111,6 +111,10 @@ const Wrapper = styled.div`
         font-size: var(--font-size-sm);
         font-weight: var(--font-weight-normal);
 
+        @media only screen and (max-width: 575px) {
+            font-size: 12px;
+        }
+
         a {
             display: flex;
             align-items: center;
@@ -124,6 +128,10 @@ const Wrapper = styled.div`
         #emailImg {
             filter: brightness(0);
             margin-right: 8px;
+
+            @media only screen and (max-width: 575px) {
+                display: none;
+            }
         }
 
         #secondaryNumber {
@@ -183,6 +191,10 @@ const Wrapper = styled.div`
                 display: flex;
                 align-items: center;
                 gap: 16px;
+
+                @media only screen and (max-width: 575px) {
+                    gap: 8px;
+                }
             }
 
             .email {

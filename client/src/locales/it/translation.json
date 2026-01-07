@@ -71,6 +71,13 @@
     "footer": {
         "question": "Hai",
         "question_2": "domande",
-        "help": "Siamo felici di aiutarti!"
+        "help": "Siamo felici di aiutarti!",
+        "legal_notice": "Avviso legale",
+        "privacy_policy": "Informativa sulla privacy",
+        "home": "Home",
+        "specialties": "Specializzazioni",
+        "blog": "Blog",
+        "contact": "Contatti",
+        "careers": "Carriera"
     }
 }

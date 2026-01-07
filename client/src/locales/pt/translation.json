@@ -6,6 +6,7 @@
         "blog": "BLOG",
         "contact": "CONTACTO",
         "careers": "CARREIRAS",
+        "jobs": "Empregos",
         "book_appointment": "MARCAR CONSULTA",
         "appointment_request": "PEDIDO DE CONSULTA"
     },
@@ -71,6 +72,13 @@
     "footer": {
         "question": "Tem alguma",
         "question_2": "perguntas",
-        "help": "Estamos felizes em ajudar!"
+        "help": "Estamos felizes em ajudar!",
+        "legal_notice": "Aviso legal",
+        "privacy_policy": "Política de privacidade",
+        "home": "Início",
+        "specialties": "Especialidades",
+        "blog": "Blog",
+        "contact": "Contacto",
+        "careers": "Carreiras"
     }
 }

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.footer`
     padding-top: 48px;
+    padding-bottom: 24px;
     width: 100%;
     background-color: #1b1c21;
 
@@ -91,6 +92,46 @@ const Wrapper = styled.footer`
         @media only screen and (max-width: 1199px) {
             width: 100%;
             justify-content: center;
+        }
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width: 1199px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 37px;
+        }
+
+        .left-part-nav {
+            width: 60%;
+            display: flex;
+            gap: 48px;
+
+            @media only screen and (max-width: 1199px) {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        .right-part-nav {
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+
+            @media only screen and (max-width: 1199px) {
+                width: 100%;
+                justify-content: center;
+                gap: 32px;
+            }
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-family: "Plus Jakarta Sans", sans-serif;
         }
     }
 `;

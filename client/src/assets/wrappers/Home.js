@@ -36,7 +36,8 @@ const Wrapper = styled.section`
 
         .content-description {
             position: absolute;
-            padding: 20px 0px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             bottom: 45px;
             display: flex;
             flex-direction: column;

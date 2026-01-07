@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import facebookLogo from "../assets/images/facebook-logo.webp";
 import instagramLogo from "../assets/images/instagram-logo.webp";
 import whatsappLogo from "../assets/images/whatsapp-logo.webp";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -43,6 +44,19 @@ const Footer = () => {
                 <div className="line">
                     <hr />
                 </div>
+                <nav>
+                    <div className="left-part-nav">
+                        <Link to="/">{t("navbar.home")}</Link>
+                        <Link to="/specialties">{t("navbar.specialties")}</Link>
+                        <Link to="/blog">{t("navbar.blog")}</Link>
+                        <Link to="/contact">{t("navbar.contact")}</Link>
+                    </div>
+                    <div className="right-part-nav">
+                        <Link to="/legal-notice">{t("footer.legal_notice")}</Link>
+                        <Link to="/privacy-policy">{t("footer.privacy_policy")}</Link>
+                        <Link to="/careers">{t("footer.careers")}</Link>
+                    </div>
+                </nav>
             </div>
         </Wrapper>
     );
