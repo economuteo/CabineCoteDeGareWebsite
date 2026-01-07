@@ -753,6 +753,24 @@ const Wrapper = styled.section`
             font-size: 1rem;
             line-height: 1.7;
         }
+
+        form {
+            width: 100%;
+            max-width: 768px;
+        }
+
+        .form {
+            margin-bottom: 16px;
+
+            .col {
+                width: 50%;
+
+                input {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
     }
 `;
 
