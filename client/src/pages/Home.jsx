@@ -227,7 +227,7 @@ const Home = () => {
                 <p className="title text-uppercase">{t("home.home_42")}</p>
                 <p className="description">{t("home.home_43")}</p>
 
-                <div className="row form-row mb-3">
+                <div className="row">
                     <div className="col-md-6">
                         <div className="form-group">
                             <input placeholder="Name*" name="Name" className="form-control valid" />
@@ -305,15 +305,15 @@ const Home = () => {
                                 name="DeliveryCheckoutUserConsent"
                             />
                             <span>
-                                I agree with the{" "}
+                                I agree with the
                                 <a
                                     className="white-txt text-decoration-underline"
                                     href="/en/terms-and-conditions"
                                     target="_blank"
                                     rel="noreferrer">
                                     terms and conditions
-                                </a>{" "}
-                                and{" "}
+                                </a>
+                                and
                                 <a
                                     className="white-txt text-decoration-underline"
                                     href="/en/privacy-policy"
