@@ -619,17 +619,35 @@ const Wrapper = styled.section`
         width: 100%;
         display: flex;
 
+        @media only screen and (max-width: 991px) {
+            flex-direction: column;
+        }
+
         .map {
-            flex: 0 0 50%;
+            width: 50%;
+
+            @media only screen and (min-width: 992px) {
+                flex: 0 0 50%;
+            }
+
+            @media only screen and (max-width: 991px) {
+                width: 100%;
+                height: 400px;
+            }
         }
 
         .contact {
-            flex: 0 0 50%;
+            width: 50%;
             padding-left: 48px;
-            padding-right: 144px;
             padding-top: 80px;
             padding-bottom: 80px;
             background-color: #1b1c21;
+
+            @media only screen and (max-width: 991px) {
+                width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
 
             .contact-title {
                 margin-bottom: 15px;

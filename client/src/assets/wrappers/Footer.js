@@ -109,6 +109,7 @@ const Wrapper = styled.footer`
         .left-part-nav {
             width: 60%;
             display: flex;
+            flex-wrap: wrap;
             gap: 48px;
 
             @media only screen and (max-width: 1199px) {
@@ -116,9 +117,11 @@ const Wrapper = styled.footer`
                 justify-content: center;
             }
         }
+
         .right-part-nav {
             width: 40%;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
 
             @media only screen and (max-width: 1199px) {
