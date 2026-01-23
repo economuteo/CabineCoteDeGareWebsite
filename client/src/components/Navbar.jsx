@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { HamburgerMenu } from "../components";
 import Wrapper from "../assets/wrappers/Navbar";
 import phoneIcon from "../assets/svgs/phone-icon.svg";
@@ -71,12 +72,12 @@ const Navbar = () => {
                 <nav>
                     <span>
                         <b>
-                            <a href="">{t("navbar.home")}</a>
+                            <Link to="/">{t("navbar.home")}</Link>
                         </b>
                     </span>
                     <span>
                         <b>
-                            <a href="">{t("navbar.pricing")}</a>
+                            <Link to="/pricing">{t("navbar.pricing")}</Link>
                         </b>
                     </span>
                     <span>
@@ -90,9 +91,9 @@ const Navbar = () => {
                         </b>
                     </span>
                     <span className="nav-logo">
-                        <a href="/">
+                        <Link to="/">
                             <img src={logo} alt="Logo" />
-                        </a>
+                        </Link>
                     </span>
                     <span>
                         <b>
