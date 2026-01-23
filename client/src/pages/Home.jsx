@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Wrapper from "../assets/wrappers/Home";
-import { ServiceCard, GoogleMapEmbed } from "../components";
+import { ServiceCard, GoogleMapEmbed, AppointmentForm } from "../components";
 import homePhoto from "../assets/images/cabinet-dentaire-bussigny-355.jpg";
 import homePozaProfil1 from "../assets/images/home-poza-profil.webp";
 import homePozaProfil2 from "../assets/images/home-poza-profil-2.webp";
@@ -228,106 +228,7 @@ const Home = () => {
                 <div className="container">
                     <p className="title text-uppercase">{t("home.home_42")}</p>
                     <p className="description">{t("home.home_43")}</p>
-
-                    <form method="post" className="form-horizontal">
-                        <div className="form-inputs">
-                            <div className="row">
-                                <div className="col">
-                                    <input
-                                        placeholder={t("home.form_name")}
-                                        name="Name"
-                                        className="form-control valid"
-                                    />
-                                    <span className="text-danger"></span>
-                                </div>
-                                <div className="col">
-                                    <input
-                                        placeholder={t("home.form_email")}
-                                        name="Email"
-                                        className="form-control valid"
-                                    />
-                                    <span className="text-danger"></span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col">
-                                    <input
-                                        placeholder={t("home.form_phone")}
-                                        name="PhoneNumber"
-                                        className="form-control valid"
-                                    />
-                                    <span className="text-danger"></span>
-                                </div>
-                                <div className="col">
-                                    <input
-                                        placeholder={t("home.form_service")}
-                                        name="Service"
-                                        className="form-control valid"
-                                    />
-                                    <span className="text-danger"></span>
-                                </div>
-                            </div>
-                            <div className="col">
-                                <input
-                                    placeholder={t("home.form_visit_purpose")}
-                                    name="VisitReason"
-                                    className="form-control valid"
-                                />
-                                <span className="text-danger"></span>
-                            </div>
-                            <div className="row">
-                                <div className="col">
-                                    <input
-                                        placeholder={t("home.form_date")}
-                                        name="Date"
-                                        className="form-control valid"
-                                        type="date"
-                                    />
-                                    <span className="text-danger"></span>
-                                </div>
-                                <div className="col">
-                                    <input
-                                        placeholder={t("home.form_time")}
-                                        name="Time"
-                                        className="form-control valid"
-                                        type="time"
-                                    />
-                                    <span className="text-danger"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col" id="agreement">
-                            <input
-                                id="checkbox"
-                                type="checkbox"
-                                required
-                                name="DeliveryCheckoutUserConsent"
-                            />
-                            <span>
-                                {t("home.form_agreement")}
-                                <a
-                                    className="white-txt text-decoration-underline"
-                                    href="/en/terms-and-conditions"
-                                    target="_blank"
-                                    rel="noreferrer">
-                                    {" "}
-                                    {t("home.form_terms")}{" "}
-                                </a>
-                                {t("home.form_and")}
-                                <a
-                                    className="white-txt text-decoration-underline"
-                                    href="/en/privacy-policy"
-                                    target="_blank"
-                                    rel="noreferrer">
-                                    {" "}
-                                    {t("home.form_privacy")}
-                                </a>
-                            </span>
-                        </div>
-                        <button type="submit" className="btn-primary">
-                            {t("home.form_submit")}
-                        </button>
-                    </form>
+                    <AppointmentForm />
                 </div>
             </div>
         </Wrapper>

@@ -3,6 +3,7 @@ import Wrapper from "../assets/wrappers/Pricing";
 import heroImage from "../assets/images/home-gallery-2.jpg";
 import clinicRoom from "../assets/images/home-gallery-1.webp";
 import loungeImage from "../assets/images/home-gallery-3.webp";
+import { SideActions } from "../components";
 
 const Pricing = () => {
     const { t } = useTranslation();
@@ -163,20 +164,7 @@ const Pricing = () => {
             </section>
 
             <section className="price-list container">
-                <p className="highlight title-space">{t("pricing.pricing_title")}</p>
-                <div className="items">
-                    {pricingItems.map((item) => (
-                        <div className="item" key={item.key}>
-                            <div className="item-text">
-                                <p className="item-title">{item.title}</p>
-                                {item.description && (
-                                    <p className="item-desc">{item.description}</p>
-                                )}
-                            </div>
-                            <div className="item-price">{item.price}</div>
-                        </div>
-                    ))}
-                </div>
+                <PriceList items={pricingItems} />
             </section>
         </Wrapper>
     );
