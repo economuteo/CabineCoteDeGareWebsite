@@ -87,12 +87,24 @@ const Wrapper = styled.section`
         }
     }
 
+    .columns {
+        margin-top: 30px;
+    }
+
     .two-column {
         margin-bottom: 120px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 2.5rem;
         align-items: center;
+
+        @media only screen and (max-width: 1000px) {
+            margin-bottom: 75px;
+        }
+
+        @media only screen and (max-width: 629px) {
+            margin-bottom: 60px;
+        }
     }
 
     .two-column.reverse {
@@ -118,6 +130,7 @@ const Wrapper = styled.section`
         margin-bottom: 15px;
         position: relative;
         color: #1f6d3c;
+        font-size: 1.5rem;
         font-family: "Playfair", serif;
         font-weight: bold;
         line-height: 1.3;
@@ -131,6 +144,7 @@ const Wrapper = styled.section`
         margin-bottom: 0.5rem;
         color: #003300;
         font-size: 48px;
+        text-align: center;
     }
 
     .normal-text {
@@ -163,6 +177,7 @@ const Wrapper = styled.section`
     }
 
     .price-list {
+        margin-bottom: 40px;
         display: flex;
         flex-direction: column;
         gap: 1.5rem;

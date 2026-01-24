@@ -33,10 +33,12 @@ const Wrapper = styled.div`
         }
 
         .title {
+            margin-bottom: 10px;
             color: #738b69 !important;
             font-size: 3.3rem;
             font-family: "Playfair", serif;
             font-weight: 500;
+            text-align: center;
 
             @media only screen and (max-width: 1490px) {
                 font-size: 2.5rem;
@@ -53,6 +55,7 @@ const Wrapper = styled.div`
 
         .description {
             margin-bottom: 1rem;
+            text-align: center;
             color: #fff;
             font-family: "Plus Jakarta Sans", sans-serif;
             font-size: 1rem;

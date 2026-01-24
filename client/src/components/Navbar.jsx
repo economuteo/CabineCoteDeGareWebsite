@@ -10,6 +10,7 @@ import logo from "../assets/images/logo.png";
 const Navbar = () => {
     const { t } = useTranslation();
     const [scrolled, setScrolled] = useState(false);
+    const [showSpecialties, setShowSpecialties] = useState(false);
     const handleScroll = () => {
         const offset = window.scrollY;
         // trigger on the smallest scroll — treat any non-zero vertical offset as scrolled
@@ -19,6 +20,20 @@ const Navbar = () => {
             setScrolled(false);
         }
     };
+
+    const specialties = [
+        { key: "navbar.specialties_list.specialty_1", path: "/prophylactic-treatments" },
+        { key: "navbar.specialties_list.specialty_2", path: "/dental-emergencies" },
+        { key: "navbar.specialties_list.specialty_3", path: "/veneers" },
+        { key: "navbar.specialties_list.specialty_4", path: "/teeth-whitening-and-brightening" },
+        { key: "navbar.specialties_list.specialty_5", path: "/dental-implants" },
+        { key: "navbar.specialties_list.specialty_6", path: "/dental-hygiene" },
+        { key: "navbar.specialties_list.specialty_7", path: "/smile-makeover" },
+        { key: "navbar.specialties_list.specialty_8", path: "/endodontics" },
+        { key: "navbar.specialties_list.specialty_9", path: "/fixed-removable-dentures" },
+        { key: "navbar.specialties_list.specialty_10", path: "/sure-smile" },
+        { key: "navbar.specialties_list.specialty_11", path: "/dental-treatment-rates" },
+    ];
 
     useEffect(() => {
         // run once to set initial state (in case user loaded the page scrolled)
@@ -40,12 +55,26 @@ const Navbar = () => {
         window.addEventListener("wheel", handleScroll, opts);
         window.addEventListener("touchmove", handleScroll, opts);
 
+        // Close dropdown when clicking outside
+        const handleClickOutside = (e) => {
+            if (
+                showSpecialties &&
+                !e.target.closest(".specialties-wrapper") &&
+                !e.target.closest(".dropdown-menu")
+            ) {
+                setShowSpecialties(false);
+            }
+        };
+
+        document.addEventListener("click", handleClickOutside);
+
         return () => {
             window.removeEventListener("scroll", handleScroll, opts);
             window.removeEventListener("wheel", handleScroll, opts);
             window.removeEventListener("touchmove", handleScroll, opts);
+            document.removeEventListener("click", handleClickOutside);
         };
-    }, []);
+    }, [showSpecialties]);
 
     return (
         <Wrapper className={`${scrolled ? "scrolled" : ""}`}>
@@ -80,10 +109,31 @@ const Navbar = () => {
                             <Link to="/pricing">{t("navbar.pricing")}</Link>
                         </b>
                     </span>
-                    <span>
+                    <span className="specialties-wrapper">
                         <b>
-                            <a href="">{t("navbar.specialties")}</a>
+                            <a
+                                href="#"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    setShowSpecialties(!showSpecialties);
+                                }}
+                                className="specialties-link">
+                                {t("navbar.specialties")}
+                            </a>
                         </b>
+                        {showSpecialties && (
+                            <div className="dropdown-menu">
+                                {specialties.map((specialty) => (
+                                    <Link
+                                        key={specialty.key}
+                                        to={specialty.path}
+                                        className="dropdown-item"
+                                        onClick={() => setShowSpecialties(false)}>
+                                        {t(specialty.key)}
+                                    </Link>
+                                ))}
+                            </div>
+                        )}
                     </span>
                     <span>
                         <b>

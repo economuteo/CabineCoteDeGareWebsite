@@ -135,32 +135,37 @@ const Pricing = () => {
                 <span className="badge">{t("pricing.badge")}</span>
             </section>
 
-            <section className="two-column container">
-                <div className="image-col">
-                    <img src={clinicRoom} alt={t("pricing.heading") || "Dental clinic"} />
-                </div>
-                <div className="text-col">
-                    <p className="highlight">{t("pricing.highlight")}</p>
-                    <p className="normal-text">{t("pricing.intro_p1")}</p>
-                    <p className="normal-text">{t("pricing.intro_p2")}</p>
-                    {t("pricing.intro_p3") && <p>{t("pricing.intro_p3")}</p>}
-                </div>
-            </section>
+            <div className="columns">
+                <section className="two-column container">
+                    <div className="image-col">
+                        <img src={clinicRoom} alt={t("pricing.heading") || "Dental clinic"} />
+                    </div>
+                    <div className="text-col">
+                        <p className="highlight">{t("pricing.highlight")}</p>
+                        <p className="normal-text">{t("pricing.intro_p1")}</p>
+                        <p className="normal-text">{t("pricing.intro_p2")}</p>
+                        {t("pricing.intro_p3") && <p>{t("pricing.intro_p3")}</p>}
+                    </div>
+                </section>
 
-            <section className="two-column reverse container">
-                <div className="text-col">
-                    <h3 className="highlight">{t("pricing.section2_title")}</h3>
-                    <p className="normal-text">{t("pricing.section2_p1")}</p>
-                    <p className="normal-text">{t("pricing.section2_p2")}</p>
-                    <p className="normal-text">{t("pricing.section2_p3")}</p>
-                    <a className="cta" href="tel:0212189218">
-                        {t("pricing.cta")}
-                    </a>
-                </div>
-                <div className="image-col">
-                    <img src={loungeImage} alt={t("pricing.section2_title") || "Waiting area"} />
-                </div>
-            </section>
+                <section className="two-column reverse container">
+                    <div className="text-col">
+                        <h3 className="highlight">{t("pricing.section2_title")}</h3>
+                        <p className="normal-text">{t("pricing.section2_p1")}</p>
+                        <p className="normal-text">{t("pricing.section2_p2")}</p>
+                        <p className="normal-text">{t("pricing.section2_p3")}</p>
+                        <a className="cta" href="tel:0212189218">
+                            {t("pricing.cta")}
+                        </a>
+                    </div>
+                    <div className="image-col">
+                        <img
+                            src={loungeImage}
+                            alt={t("pricing.section2_title") || "Waiting area"}
+                        />
+                    </div>
+                </section>
+            </div>
 
             <section className="price-list container">
                 <p className="highlight title-space">{t("pricing.pricing_title")}</p>

@@ -7,7 +7,20 @@
         "contact": "CONTACT",
         "careers": "CAREERS",
         "book_appointment": "BOOK APPOINTMENT",
-        "appointment_request": "APPOINTMENT REQUEST"
+        "appointment_request": "APPOINTMENT REQUEST",
+        "specialties_list": {
+            "specialty_1": "Prophylactic Treatments",
+            "specialty_2": "Dental Emergencies",
+            "specialty_3": "Veneers",
+            "specialty_4": "Teeth Whitening and Brightening",
+            "specialty_5": "Dental Implants",
+            "specialty_6": "Dental Hygiene",
+            "specialty_7": "Smile Makeover",
+            "specialty_8": "Endodontics",
+            "specialty_9": "Fixed and Removable Dentures",
+            "specialty_10": "Sure Smile",
+            "specialty_11": "Dental Treatment Rates"
+        }
     },
     "home": {
         "read_all": "READ MORE",
@@ -152,6 +165,15 @@
             "onlay_title": "Onlay (composite or ceramic crown)",
             "onlay_desc": "Extended reconstruction done in two stages",
             "onlay_price": "From 1150.- CHF"
+        }
+    },
+    "specialites": {
+        "prophylactic": {
+            "badge": "Specialties",
+            "title": "Prophylactic Treatments – Prevention to Protect Your Teeth",
+            "intro_title": "Prophylactic treatments are essential to prevent dental problems before they become serious.",
+            "intro_p1": "By choosing regular preventive care, you can protect your teeth from cavities, gum disease, and other dental conditions. In our clinic, we offer a complete range of prophylactic treatments tailored to your specific needs to ensure optimal dental health throughout your life.",
+            "intro_p2": "Our prophylactic treatments include professional cleanings, thorough dental exams, and personalized guidance on oral hygiene. Our team of experienced specialists uses advanced technology to detect potential issues at the earliest signs and treat them effectively before they worsen. Beyond preventing dental diseases, prophylactic treatments help maintain a bright, healthy smile."
         }
     }
 }

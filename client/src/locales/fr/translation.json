@@ -7,7 +7,20 @@
         "contact": "CONTACT",
         "careers": "CARRIÈRE",
         "book_appointment": "PRENDRE RDV",
-        "appointment_request": "DEMANDE DE RENDEZ-VOUS"
+        "appointment_request": "DEMANDE DE RENDEZ-VOUS",
+        "specialties_list": {
+            "specialty_1": "Traitements prophylactiques",
+            "specialty_2": "Urgences dentaires",
+            "specialty_3": "Facettes",
+            "specialty_4": "Blanchiment et éclaircissement des dents",
+            "specialty_5": "Implants dentaires",
+            "specialty_6": "Hygiène dentaire",
+            "specialty_7": "Un Relooking du Sourire",
+            "specialty_8": "Endodontie",
+            "specialty_9": "Prothèses fixes et amovibles",
+            "specialty_10": "Sure Smile",
+            "specialty_11": "Tarif soins dentaires"
+        }
     },
     "home": {
         "read_all": "LIRE LA SUITE",
@@ -152,6 +165,15 @@
             "onlay_title": "Onlay (couronne composite ou céramique)",
             "onlay_desc": "Reconstruction étendue réalisée en deux temps",
             "onlay_price": "À partir de 1150.- CHF"
+        }
+    },
+    "specialites": {
+        "prophylactic": {
+            "badge": "Spécialités",
+            "title": "Traitements prophylactiques – La Prévention pour Protéger Vos Dents",
+            "intro_title": "Les traitements prophylactiques sont essentiels pour prévenir les problèmes dentaires avant qu'ils ne deviennent graves.",
+            "intro_p1": "En choisissant des soins préventifs réguliers, vous pouvez protéger vos dents contre les caries, les maladies des gencives et d'autres affections dentaires. Dans notre clinique, nous offrons une gamme complète de traitements prophylactiques adaptés à vos besoins spécifiques, afin de garantir une santé dentaire optimale tout au long de votre vie.",
+            "intro_p2": "Nos traitements prophylactiques incluent des nettoyages professionnels, des examens dentaires approfondis, ainsi que des conseils personnalisés sur l'hygiène bucco-dentaire. Notre équipe de spécialistes expérimentés utilise des technologies de pointe pour détecter les problèmes potentiels dès les premiers signes et pour les traiter efficacement avant qu'ils ne s'aggravent. En plus de prévenir les maladies dentaires, les traitements prophylactiques contribuent à maintenir un sourire éclatant et en bonne santé."
         }
     }
 }

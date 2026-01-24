@@ -8,7 +8,9 @@ const Wrapper = styled.div`
     transform: translate(-50%);
     z-index: 1000;
     color: var(--primary-50);
-    font-family: Plus Jakarta Sans, sans-serif;
+    font-family:
+        Plus Jakarta Sans,
+        sans-serif;
     font-weight: 500;
 
     &.scrolled {
@@ -55,12 +57,79 @@ const Wrapper = styled.div`
             text-decoration: none;
         }
 
+        .specialties-wrapper {
+            position: relative;
+            display: inline-block;
+            white-space: normal;
+        }
+
+        .specialties-link {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding-right: 30px;
+        }
+
         a:visited,
         a:focus,
         a:hover,
         a:active {
             color: inherit;
             text-decoration: none;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            background: rgba(115, 139, 105, 0.95);
+            border-radius: 4px;
+            min-width: 280px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            padding: 12px 0;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .dropdown-item {
+            display: block;
+            padding: 12px 20px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: background-color 0.2s ease;
+            text-decoration: none;
+
+            &:visited,
+            &:hover,
+            &:active,
+            &:focus {
+                color: white;
+                text-decoration: none;
+            }
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+
+            &:first-child {
+                padding-top: 12px;
+            }
+
+            &:last-child {
+                padding-bottom: 12px;
+            }
         }
 
         .nav-logo {

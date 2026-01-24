@@ -2,6 +2,7 @@ import logo from "../assets/images/logo.png";
 import close from "../assets/images/close.svg";
 import Wrapper from "../assets/wrappers/Sidebar";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const Sidebar = ({ toggleSidebar }) => {
     const { t } = useTranslation();
@@ -10,9 +11,9 @@ const Sidebar = ({ toggleSidebar }) => {
         <Wrapper className="collapse navbar-collapse show" id="navbarTogglerDemo03">
             <div className="menu-header">
                 <div className="menu-logo">
-                    <a href="/">
+                    <Link to="/" onClick={toggleSidebar}>
                         <img src={logo} alt="Logo" />
-                    </a>
+                    </Link>
                 </div>
                 <img id="closeButton" src={close} alt="" onClick={toggleSidebar} />
             </div>
@@ -21,46 +22,54 @@ const Sidebar = ({ toggleSidebar }) => {
 
             <div className="navbar-nav mr-auto align-items-lg-center">
                 <p className="nav-item">
-                    <a href="/" className="nav-link active" aria-current="page">
+                    <Link
+                        to="/"
+                        className="nav-link active"
+                        aria-current="page"
+                        onClick={toggleSidebar}>
                         {t("navbar.home")}
-                    </a>
+                    </Link>
                 </p>
                 <p className="nav-item">
-                    <a href="/tarifs" className="nav-link">
+                    <Link to="/pricing" className="nav-link" onClick={toggleSidebar}>
                         {t("navbar.pricing")}
-                    </a>
+                    </Link>
                 </p>
                 <p className="nav-item dropdown">
-                    <a
-                        href="/specialites"
+                    <Link
+                        to="/specialites"
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-haspopup="true"
                         aria-expanded="false"
-                        className="nav-link dropdown-toggle">
+                        className="nav-link dropdown-toggle"
+                        onClick={toggleSidebar}>
                         {t("navbar.specialties")}
-                    </a>
+                    </Link>
                 </p>
                 <p className="nav-item">
-                    <a href="/blog" className="nav-link">
+                    <Link to="/blog" className="nav-link" onClick={toggleSidebar}>
                         {t("navbar.blog")}
-                    </a>
+                    </Link>
                 </p>
                 <p className="nav-item">
-                    <a href="/contact" className="nav-link">
+                    <Link to="/contact" className="nav-link" onClick={toggleSidebar}>
                         {t("navbar.contact")}
-                    </a>
+                    </Link>
                 </p>
                 <p className="nav-item">
-                    <a href="/carriere" className="nav-link">
+                    <Link to="/carriere" className="nav-link" onClick={toggleSidebar}>
                         {t("navbar.careers")}
-                    </a>
+                    </Link>
                 </p>
             </div>
 
-            <a href="/prendre-rdv" className="btn-primary appointment-button">
+            <Link
+                to="/prendre-rdv"
+                className="btn-primary appointment-button"
+                onClick={toggleSidebar}>
                 {t("navbar.book_appointment")}
-            </a>
+            </Link>
         </Wrapper>
     );
 };
