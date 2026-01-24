@@ -224,13 +224,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="content-8">
-                <div className="container">
-                    <p className="title text-uppercase">{t("home.home_42")}</p>
-                    <p className="description">{t("home.home_43")}</p>
-                    <AppointmentForm />
-                </div>
-            </div>
+            <AppointmentForm />
         </Wrapper>
     );
 };

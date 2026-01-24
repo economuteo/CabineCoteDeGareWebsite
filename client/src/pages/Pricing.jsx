@@ -178,7 +178,6 @@ const Pricing = () => {
                     ))}
                 </div>
             </section>
-
             <AppointmentForm />
         </Wrapper>
     );
